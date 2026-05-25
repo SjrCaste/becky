@@ -1,31 +1,29 @@
 import { Header } from "@/components/header"
 import { PageHero } from "@/components/page-hero"
 import { AboutSection } from "@/components/about-section"
-import { AppointmentBanner } from "@/components/appointment-banner"
+import { BookingForm } from "@/components/booking-form"
 import { Footer } from "@/components/footer"
 import { NosotrosValues } from "@/components/nosotros-values"
-import { NosotrosTimeline } from "@/components/nosotros-timeline"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Nosotros | E & T Modas",
+  title: "Nuestra Historia | Sedería Becky",
   description:
-    "Conoce la historia de E & T Modas, mas de 30 años vistiendo momentos especiales en el corazon de Buenos Aires.",
+    "Conocé la historia de Sedería Becky, más de 45 años de legado, tradición y confección de vestidos a medida en Once, Buenos Aires.",
 }
 
 export default function NosotrosPage() {
   return (
-    <main>
+    <main className="min-h-screen bg-background">
       <Header />
       <PageHero
-        label="Quienes somos"
-        title="Mas de 30 años de elegancia"
-        description="Una boutique familiar fundada con pasion por la moda y el servicio personalizado, en el corazon de CABA."
+        label="Legado & Trayectoria"
+        title="Nuestra Historia"
+        description="Una boutique familiar fundada en 1981 con pasión por los hilados nobles, la sastrería artesanal y la atención de alta costura."
       />
       <AboutSection />
-      <NosotrosTimeline />
       <NosotrosValues />
-      <AppointmentBanner />
+      <BookingForm />
       <Footer />
     </main>
   )

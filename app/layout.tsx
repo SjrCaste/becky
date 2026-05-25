@@ -17,10 +17,20 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'E & T Modas | Boutique de Moda de Fiesta',
-  description: 'Más de 30 años acompañando momentos únicos. Sedería premium y moda de fiesta para ocasiones especiales. Vestidos de 15, novias y eventos.',
+  title: 'Sedería Becky | Alta Costura, Novias y Ceremonias de Lujo',
+  description: 'Más de 45 años de trayectoria creando momentos inolvidables. Boutique premium de alta costura, vestidos de novia, 15 años, fiesta y Bat Mitzvá en Buenos Aires.',
   generator: 'v0.app',
-  keywords: ['vestidos de 15', 'moda de fiesta', 'sedería', 'boutique', 'CABA', 'vestidos de fiesta'],
+  keywords: [
+    'vestidos de novia Buenos Aires',
+    'vestidos de 15',
+    'alta costura',
+    'vestidos Bat Mitzvá',
+    'vestidos madrinas',
+    'sedería premium',
+    'vestidos ceremonia',
+    'Sedería Becky',
+    'Once'
+  ],
   icons: {
     icon: [
       {
