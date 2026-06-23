@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { PRODUCTS } from "@/lib/data"
+import { getProducts } from "@/lib/supabase-services"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   description: "Boutique de vestidos de fiesta, gala y noche en Buenos Aires. Modelos sofisticados en crepes de seda, rasos y pedrería fina.",
 }
 
-export default function FiestaCategoryPage() {
-  const fiesta = PRODUCTS.filter(p => p.category === "fiesta")
+export default async function FiestaCategoryPage() {
+  const allProducts = await getProducts()
+  const fiesta = allProducts.filter(p => p.category === "fiesta")
 
   return (
     <main>

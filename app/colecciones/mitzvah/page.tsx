@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { PRODUCTS } from "@/lib/data"
+import { getProducts } from "@/lib/supabase-services"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   description: "Sección ceremonial premium especializada en vestidos de Bat Mitzvá y trajes de sastrería artesanal para jóvenes y familias de la comunidad judía.",
 }
 
-export default function MitzvahCategoryPage() {
-  const mitzvah = PRODUCTS.filter(p => p.category === "mitzvah")
+export default async function MitzvahCategoryPage() {
+  const allProducts = await getProducts()
+  const mitzvah = allProducts.filter(p => p.category === "mitzvah")
 
   return (
     <main>

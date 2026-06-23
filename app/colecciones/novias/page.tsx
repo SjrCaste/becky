@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { PRODUCTS } from "@/lib/data"
+import { getProducts } from "@/lib/supabase-services"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   description: "Diseños de vestidos de novia de alta costura a medida y en stock. Encajes franceses, satén italiano y organza natural para tu gran boda.",
 }
 
-export default function NoviasCategoryPage() {
-  const novias = PRODUCTS.filter(p => p.category === "novias")
+export default async function NoviasCategoryPage() {
+  const allProducts = await getProducts()
+  const novias = allProducts.filter(p => p.category === "novias")
 
   return (
     <main>

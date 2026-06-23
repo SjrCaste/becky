@@ -1,7 +1,7 @@
 "use client"
 
 import { ProductForm } from "@/components/admin/product-form"
-import { getStoredProducts } from "@/lib/store"
+import { getProductById } from "@/lib/supabase-services"
 import { notFound } from "next/navigation"
 import { useEffect, useState } from "react"
 import React from "react"
@@ -13,8 +13,7 @@ export default function EditProductPage({ params }: { params: Promise<{ id: stri
   useEffect(() => {
     const fetchProduct = async () => {
       const resolvedParams = await params
-      const products = getStoredProducts()
-      const product = products.find(p => p.id === resolvedParams.id)
+      const product = await getProductById(resolvedParams.id)
       
       if (!product) {
         notFound()

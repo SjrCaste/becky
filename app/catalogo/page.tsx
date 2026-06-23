@@ -6,7 +6,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { PRODUCTS, Product } from "@/lib/data"
+import { Product } from "@/lib/data"
+import { getProducts } from "@/lib/supabase-services"
 import { Search, SlidersHorizontal, Sliders, ChevronDown, Check, X } from "lucide-react"
 
 // Client-side catalog component that reads SearchParams
@@ -21,6 +22,18 @@ function CatalogContent() {
   const [selectedSize, setSelectedSize] = useState<string>("all")
   const [selectedStyle, setSelectedStyle] = useState<string>("all")
   const [showMobileFilters, setShowMobileFilters] = useState(false)
+  
+  const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    async function load() {
+      const data = await getProducts()
+      setProducts(data)
+      setLoading(false)
+    }
+    load()
+  }, [])
 
   // Sync category state with search query param on load
   useEffect(() => {
@@ -31,12 +44,12 @@ function CatalogContent() {
   }, [searchParams])
 
   // Extract unique filter options from data dynamically
-  const colors = Array.from(new Set(PRODUCTS.flatMap(p => p.colors)))
-  const sizes = Array.from(new Set(PRODUCTS.flatMap(p => p.sizes)))
-  const styles = Array.from(new Set(PRODUCTS.flatMap(p => p.styles)))
+  const colors = Array.from(new Set(products.flatMap(p => p.colors)))
+  const sizes = Array.from(new Set(products.flatMap(p => p.sizes)))
+  const styles = Array.from(new Set(products.flatMap(p => p.styles)))
 
   // Filter logic
-  const filteredProducts = PRODUCTS.filter((product) => {
+  const filteredProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           product.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -225,7 +238,11 @@ function CatalogContent() {
             )}
 
             {/* Product Grid */}
-            {filteredProducts.length === 0 ? (
+            {loading ? (
+              <div className="text-center py-20 bg-card border border-border/60">
+                <p className="font-serif text-lg text-muted-foreground">Cargando catálogo...</p>
+              </div>
+            ) : filteredProducts.length === 0 ? (
               <div className="text-center py-20 bg-card border border-border/60">
                 <p className="font-serif text-lg text-muted-foreground">No encontramos vestidos que coincidan con los filtros seleccionados.</p>
                 <button 

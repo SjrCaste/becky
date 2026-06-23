@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react"
 import { Product } from "@/lib/data"
-import { getStoredProducts } from "@/lib/store"
+import { getProducts, deleteProduct } from "@/lib/supabase-services"
 import { Button } from "@/components/ui/button"
+import { toast } from "sonner"
 import { Input } from "@/components/ui/input"
 import { 
   Table, 
@@ -29,10 +30,30 @@ import Link from "next/link"
 export default function AdminProductsPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [products, setProducts] = useState<Product[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setProducts(getStoredProducts())
+    fetchProducts()
   }, [])
+
+  const fetchProducts = async () => {
+    setLoading(true)
+    const data = await getProducts()
+    setProducts(data)
+    setLoading(false)
+  }
+
+  const handleDelete = async (id: string) => {
+    if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
+      const success = await deleteProduct(id)
+      if (success) {
+        toast.success("Producto eliminado")
+        fetchProducts()
+      } else {
+        toast.error("Error al eliminar el producto")
+      }
+    }
+  }
 
   const filteredProducts = products.filter(product => 
     product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -91,7 +112,13 @@ export default function AdminProductsPage() {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {filteredProducts.length > 0 ? (
+            {loading ? (
+              <TableRow>
+                <TableCell colSpan={6} className="h-24 text-center text-muted-foreground">
+                  Cargando productos...
+                </TableCell>
+              </TableRow>
+            ) : filteredProducts.length > 0 ? (
               filteredProducts.map((product) => (
                 <TableRow key={product.id}>
                   <TableCell>
@@ -146,7 +173,7 @@ export default function AdminProductsPage() {
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem className="text-red-600 cursor-pointer">
+                        <DropdownMenuItem className="text-red-600 cursor-pointer" onClick={() => handleDelete(product.id)}>
                           <Trash2 className="h-4 w-4 mr-2" />
                           Eliminar
                         </DropdownMenuItem>

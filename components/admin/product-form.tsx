@@ -33,7 +33,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import React, { useState, useRef } from "react"
 import Image from "next/image"
-import { saveProductToStore } from "@/lib/store"
+import { createProduct, updateProduct } from "@/lib/supabase-services"
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "El nombre debe tener al menos 2 caracteres." }),
@@ -89,9 +89,8 @@ export function ProductForm({ initialData }: ProductFormProps) {
     },
   })
 
-  function onSubmit(data: ProductFormValues) {
-    saveProductToStore({
-      id: initialData?.id,
+  async function onSubmit(data: ProductFormValues) {
+    const productData = {
       name: data.name,
       category: data.category as any,
       subCategory: data.subCategory,
@@ -101,7 +100,13 @@ export function ProductForm({ initialData }: ProductFormProps) {
       isFeatured: data.isFeatured,
       sizes: data.sizes ? data.sizes.split(",").map(s => s.trim()) : [],
       colors: data.colors ? data.colors.split(",").map(c => c.trim()) : [],
-    })
+    }
+
+    if (initialData?.id) {
+      await updateProduct(initialData.id, productData)
+    } else {
+      await createProduct(productData)
+    }
     
     toast.success("Producto guardado", {
       description: "El producto se ha guardado correctamente.",

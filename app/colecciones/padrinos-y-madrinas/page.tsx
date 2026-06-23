@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { PRODUCTS } from "@/lib/data"
+import { getProducts } from "@/lib/supabase-services"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -10,8 +10,9 @@ export const metadata: Metadata = {
   description: "Diseños de alta costura para madrinas de casamiento, trajes de etiqueta para padrinos y conjuntos finos coordinados de cortejo.",
 }
 
-export default function PadrinosCategoryPage() {
-  const padrinos = PRODUCTS.filter(p => p.category === "padrinos-y-madrinas")
+export default async function PadrinosCategoryPage() {
+  const allProducts = await getProducts()
+  const padrinos = allProducts.filter(p => p.category === "padrinos-y-madrinas")
 
   return (
     <main>

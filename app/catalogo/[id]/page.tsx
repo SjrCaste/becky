@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { PRODUCTS } from "@/lib/data"
+import { getProducts, getProductById } from "@/lib/supabase-services"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import ProductDetailClient from "./product-detail-client"
@@ -10,27 +10,31 @@ interface PageProps {
 
 // Next.js static path generation (optional but highly recommended for fast loading)
 export async function generateStaticParams() {
-  return PRODUCTS.map((product) => ({
+  const products = await getProducts()
+  return products.map((product) => ({
     id: product.id,
   }))
 }
 
 export default async function ProductDetailPage({ params }: PageProps) {
   const resolvedParams = await params
-  const product = PRODUCTS.find((p) => p.id === resolvedParams.id)
+  
+  const product = await getProductById(resolvedParams.id)
 
   if (!product) {
     notFound()
   }
 
+  const allProducts = await getProducts()
+
   // Filter recommendations (other products in same category or adjacent)
-  const recommendations = PRODUCTS.filter(
+  const recommendations = allProducts.filter(
     (p) => p.category === product.category && p.id !== product.id
   ).slice(0, 3)
 
   // If not enough recommendations, pad with featured items
   if (recommendations.length < 3) {
-    const featured = PRODUCTS.filter(
+    const featured = allProducts.filter(
       (p) => p.id !== product.id && !recommendations.includes(p)
     ).slice(0, 3 - recommendations.length)
     recommendations.push(...featured)
