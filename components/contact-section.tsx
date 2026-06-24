@@ -75,7 +75,7 @@ export function ContactSection() {
 
             <div className="pt-6 border-t border-white/10">
               <p className="text-xs text-primary-foreground/50 italic tracking-wider font-light">
-                &ldquo;45 años vistiendo momentos inolvidables. La excelencia está en la dedicación de cada puntada.&rdquo;
+                &ldquo;84 años vistiendo bodas y fiestas. La excelencia está en la dedicación de cada puntada.&rdquo;
               </p>
             </div>
           </div>

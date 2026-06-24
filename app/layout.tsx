@@ -18,7 +18,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: 'Sedería Becky | Alta Costura, Novias y Ceremonias de Lujo',
-  description: 'Más de 45 años de trayectoria creando momentos inolvidables. Boutique premium de alta costura, vestidos de novia, 15 años, fiesta y Bat Mitzvá en Buenos Aires.',
+  description: 'Más de 84 años de trayectoria familiar creando momentos inolvidables. Boutique premium de alta costura, vestidos de novia, 15 años, fiesta y Bat Mitzvá en Buenos Aires.',
   generator: 'v0.app',
   keywords: [
     'vestidos de novia Buenos Aires',

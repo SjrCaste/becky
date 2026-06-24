@@ -1,26 +1,26 @@
 const TIMELINE = [
   {
-    year: '1981',
-    title: 'El Origen del Atelier',
-    description: 'Nace como un taller familiar dedicado a la importación y comercialización de tejidos finos de seda en Buenos Aires. Nuestra fundadora, Becky, comenzó vistiendo a novias de la comunidad con un sentido único de atención personalizada.',
+    year: '1942',
+    title: 'Fundación del Atelier',
+    description: 'José Abad funda nuestra sedería de vestidos en Buenos Aires, orientada desde sus inicios a bodas y fiestas. El comienzo de una historia familiar que es, hasta hoy, la vida de los Abad.',
     image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'
   },
   {
-    year: '1995',
-    title: 'Establecimiento en Azcuénaga',
-    description: 'Consolidamos nuestra ubicación histórica en Azcuénaga 410, convirtiéndonos en la sedería y boutique de referencia para bodas y ceremonias elegantes en la zona, distinguiéndonos por la calidad inigualable y la atención a medida.',
+    year: '1963',
+    title: 'Eduardo Abad se incorpora a la familia',
+    description: 'Eduardo Abad, familiar de nuestro fundador, se suma al negocio familiar, dando continuidad a la tradición de la sedería de bodas y fiestas.',
     image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80'
   },
   {
-    year: '2010',
-    title: 'Generaciones de Alta Costura',
-    description: 'Incorporamos la línea completa de vestidos listos para usar (pret-a-porter premium) y el atelier de novias propio, combinando técnicas artesanales con diseños inspirados en las pasarelas de alta costura de París y Milán.',
+    year: '1983',
+    title: 'Eduardo Abad al frente del local',
+    description: 'Eduardo Abad asume la atención del local, donde continúa hasta el día de hoy: ya son 43 años atendiendo a cada cliente con dedicación familiar.',
     image: 'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80'
   },
   {
     year: '2026',
-    title: '45 Años de Tradición y Futuro',
-    description: 'Celebramos 45 años de historia vistiendo momentos inolvidables. Confección tradicional hecha a mano que abraza las siluetas modernas, manteniendo viva la promesa de exclusividad, lujo e identidad familiar.',
+    title: '84 Años de Tradición y Futuro',
+    description: 'Celebramos 84 años de historia vistiendo bodas y fiestas. Confección tradicional hecha a mano que abraza las siluetas modernas, manteniendo viva la promesa de exclusividad, lujo e identidad familiar.',
     image: 'https://images.unsplash.com/photo-1591551970139-29b552dd8539?auto=format&fit=crop&w=800&q=80'
   }
 ];
@@ -46,7 +46,7 @@ const TESTIMONIALS = [
     id: 't-3',
     name: 'Elena Rodríguez',
     role: 'Madrina de Boda',
-    quote: 'Con 45 años de experiencia, sabían exactamente qué caída y color me favorecía. La seda salvaje y los detalles dorados que elegimos en el local de Azcuénaga hicieron que me sintiera espléndida.',
+    quote: 'Con 84 años de experiencia, sabían exactamente qué caída y color me favorecía. La seda salvaje y los detalles dorados que elegimos en el local hicieron que me sintiera espléndida.',
     image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=300&q=80',
     date: 'Marzo, 2026'
   }

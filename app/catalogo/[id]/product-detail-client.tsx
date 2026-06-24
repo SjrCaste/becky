@@ -196,7 +196,7 @@ export default function ProductDetailClient({ product, recommendations }: Props)
             {/* Trust disclaimer */}
             <div className="flex gap-3 items-center text-xs text-muted-foreground border-t border-border pt-6 font-light">
               <ShieldCheck className="w-5 h-5 text-accent" />
-              <span>Garantía de Sedería Becky: 45 años de excelencia sastrera respaldan tu vestido.</span>
+              <span>Garantía de Sedería Becky: 84 años de excelencia sastrera respaldan tu vestido.</span>
             </div>
           </div>
         </div>

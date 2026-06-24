@@ -82,7 +82,7 @@ export function HeroSection({ homeSetting }: { homeSetting?: HomeSetting | null 
         <div className="inline-flex items-center gap-3 mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
           <span className="h-[1px] w-6 bg-accent" />
           <span className="text-accent text-xs md:text-sm tracking-[0.4em] uppercase font-light">
-            45 años creando momentos inolvidables
+            84 años vistiendo bodas y fiestas
           </span>
           <span className="h-[1px] w-6 bg-accent" />
         </div>

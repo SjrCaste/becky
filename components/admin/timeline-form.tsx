@@ -73,7 +73,7 @@ export function TimelineForm({ initialData }: TimelineFormProps) {
               id="year" name="year" 
               value={formData.year} onChange={handleChange} 
               required 
-              placeholder="Ej: 1981"
+              placeholder="Ej: 1942"
             />
           </div>
 

@@ -35,7 +35,7 @@ const faqs = [
     items: [
       {
         q: "¿Venden telas finas por metro?",
-        a: "Sí. Sedería Becky nació hace 45 años como importadora de tejidos finos. Ofrecemos encajes de Chantilly francés, satén duchesse italiano, organza de seda suiza, tules bordados en pedrería y canutillos. Son ideales para modistas y ateliers de alta costura.",
+        a: "Sí. Sedería Becky nació en 1942 como sedería familiar. Ofrecemos encajes de Chantilly francés, satén duchesse italiano, organza de seda suiza, tules bordados en pedrería y canutillos. Son ideales para modistas y ateliers de alta costura.",
       },
       {
         q: "¿Asesoran en la cantidad de tela necesaria para un diseño?",

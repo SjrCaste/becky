@@ -19,12 +19,12 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
               Nuestra Historia
             </span>
             <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-foreground tracking-wide leading-tight text-balance">
-              45 Años de Tradición y <br className="hidden md:inline" /> Alta Costura Artesanal
+              84 Años de Tradición y <br className="hidden md:inline" /> Alta Costura Artesanal
             </h2>
           </div>
           <div className="lg:col-span-4 lg:pb-2">
             <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-              Desde 1981 acompañando momentos inolvidables en Buenos Aires. Un legado familiar forjado en la atención íntima, el respeto por las telas nobles y la excelencia de sastrería.
+              Desde 1942 acompañando bodas y fiestas en Buenos Aires. Un legado familiar de los Abad, forjado en la atención íntima, el respeto por las telas nobles y la excelencia de sastrería.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
             <div className="absolute inset-4 border border-white/20 pointer-events-none" />
             <div className="absolute bottom-6 left-6 bg-foreground/90 backdrop-blur-md px-6 py-4 text-primary-foreground border-l-2 border-accent">
               <p className="text-xs uppercase tracking-widest text-accent font-semibold mb-1">Fundada en</p>
-              <p className="font-serif text-2xl tracking-wider">Buenos Aires, 1981</p>
+              <p className="font-serif text-2xl tracking-wider">Buenos Aires, 1942</p>
             </div>
           </div>
 
@@ -79,7 +79,7 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
               <div className="flex gap-3">
                 <Award className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-serif text-base text-foreground font-semibold">45 Años de Fe</h4>
+                  <h4 className="font-serif text-base text-foreground font-semibold">84 Años de Fe</h4>
                   <p className="text-xs text-muted-foreground mt-1">Larga trayectoria de confianza y compromiso familiar.</p>
                 </div>
               </div>

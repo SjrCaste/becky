@@ -38,7 +38,7 @@ export function Footer() {
                 </span>
               </Link>
               <p className="mt-6 text-xs text-primary-foreground/65 leading-relaxed max-w-xs font-light">
-                Boutique e importadores de textiles finos con más de 45 años de trayectoria familiar en Buenos Aires. Acompañamos tus momentos inolvidables.
+                Sedería de vestidos para bodas y fiestas, con más de 84 años de trayectoria familiar de los Abad en Buenos Aires. Acompañamos tus momentos inolvidables.
               </p>
             </div>
 
@@ -142,7 +142,7 @@ export function Footer() {
       <div className="border-t border-white/5 bg-foreground">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-primary-foreground/50 tracking-wider">
           <span>© {new Date().getFullYear()} SEDERÍA BECKY. Todos los derechos reservados.</span>
-          <span className="text-accent italic font-serif">“45 años vistiendo momentos inolvidables.”</span>
+          <span className="text-accent italic font-serif">"84 años vistiendo bodas y fiestas."</span>
         </div>
       </div>
     </footer>
