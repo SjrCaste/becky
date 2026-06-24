@@ -6,37 +6,79 @@ import Image from "next/image"
 const categories = [
   {
     slug: "novias",
-    title: "Novias",
+    title: "Vestidos de Novia",
     tagline: "Bridal Couture",
     image: "https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80",
-    subcategories: ["Clásicos", "Modernos", "Princesa", "Sirena", "Minimalistas", "Alta Costura"],
-    description: "Cada vestido es una obra de arte. Diseñados a mano para reflejar tu luz interior en el gran día."
+    subcategories: ["En Stock", "A Medida", "Diseño Personalizado"],
+    description: "Diseños únicos para cada novia. Contamos con vestidos en stock y opciones personalizadas para crear el vestido que siempre soñaste."
   },
   {
     slug: "15-anos",
-    title: "15 Años",
+    title: "Vestidos de 15 Años",
     tagline: "Debutante Elegance",
     image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80",
-    subcategories: ["Princesa", "Modernos", "Brillantes", "Exclusivos"],
-    description: "Creaciones de ensueño con faldas mágicas, corsetería fina y el brillo estelar que tu noche soñada merece."
+    subcategories: ["Asesoramiento Personalizado", "Confección a Medida", "Modelos Exclusivos"],
+    description: "Modelos exclusivos para una noche inolvidable, con asesoramiento personalizado y confección a medida."
   },
   {
     slug: "fiesta",
-    title: "Fiesta",
-    tagline: "Gala & Nightwear",
+    title: "Vestidos de Fiesta",
+    tagline: "Gala & Eventos",
     image: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80",
-    subcategories: ["Vestidos Largos", "Vestidos Cortos", "Diseños de Gala", "Elegancia Pura"],
-    description: "Una silueta para cada celebración importante. Alta costura para brillar como invitada de gala."
+    subcategories: ["Graduaciones", "Eventos Sociales", "Galas"],
+    description: "Opciones elegantes y modernas para graduaciones, eventos sociales, galas y celebraciones especiales."
   },
   {
-    slug: "mitzvah",
-    title: "Bat & Bar Mitzvá",
-    tagline: "Ceremonial Tradición",
-    image: "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
-    subcategories: ["Bat Mitzvá (Mujeres)", "Bar Mitzvá (Hombres)", "Looks Ceremoniales", "Juvenil Premium"],
-    description: "Sección premium especializada en diseños ceremoniales y sastrería para jóvenes y familias de la comunidad."
+    slug: "padrinos-y-madrinas",
+    title: "Madrinas y Cortejos",
+    tagline: "Cortejo & Damas de Honor",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Madrinas", "Damas de Honor", "Cortejos"],
+    description: "Diseños sofisticados para madrinas, damas de honor y cortejos, adaptados a cada estilo y evento."
+  },
+  {
+    slug: "alta-costura-a-medida",
+    title: "Alta Costura y Confección a Medida",
+    tagline: "Atelier Personalizado",
+    image: "https://images.unsplash.com/photo-1591551970139-29b552dd8539?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Atención Personalizada", "Confección Exclusiva", "Terminaciones de Calidad"],
+    description: "Prendas confeccionadas especialmente para cada clienta, con atención personalizada y terminaciones de calidad."
+  },
+  {
+    slug: "vestidos-en-stock",
+    title: "Vestidos en Stock",
+    tagline: "Entrega Inmediata",
+    image: "https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Disponibilidad Inmediata", "Pruebas en el Local", "Amplia Variedad"],
+    description: "Amplia variedad de modelos disponibles para entrega inmediata y pruebas en el local."
+  },
+  {
+    slug: "etiqueta-masculina",
+    title: "Etiqueta Masculina",
+    tagline: "Alquiler de Trajes",
+    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Novios", "Padrinos", "Eventos Formales"],
+    description: "Alquiler de trajes y prendas de etiqueta para novios, padrinos y eventos formales."
+  },
+  {
+    slug: "telas-y-sederia",
+    title: "Telas y Sedería",
+    tagline: "Importadas de Lujo",
+    image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Encajes", "Tul y Satén", "Brillos y Piedras"],
+    description: "Gran variedad de encajes, tul, satén, brillos, piedras y telas importadas disponibles para confección."
+  },
+  {
+    slug: "accesorios",
+    title: "Accesorios",
+    tagline: "Complementos Selectos",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    subcategories: ["Tocados", "Joyería", "Complementos"],
+    description: "Complementos seleccionados para completar cada look y acompañar cada ocasión especial."
   }
 ]
+
+const FILTERABLE_SLUGS = ["novias", "15-anos", "fiesta", "padrinos-y-madrinas"]
 
 export function CollectionCategories() {
   return (
@@ -57,8 +99,8 @@ export function CollectionCategories() {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {categories.map((cat) => (
             <Link 
-              key={cat.slug} 
-              href={`/catalogo?categoria=${cat.slug}`}
+              key={cat.slug}
+              href={FILTERABLE_SLUGS.includes(cat.slug) ? `/catalogo?categoria=${cat.slug}` : "/catalogo"}
               className="group relative block aspect-[3/4] md:aspect-[4/5] lg:aspect-[4/3] overflow-hidden border border-border/60 shadow-sm hover:shadow-xl transition-all duration-700"
             >
               {/* Image with zoom on hover */}

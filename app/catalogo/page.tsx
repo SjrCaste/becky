@@ -10,6 +10,15 @@ import { Product } from "@/lib/data"
 import { getProducts } from "@/lib/supabase-services"
 import { Search, SlidersHorizontal, Sliders, ChevronDown, Check, X } from "lucide-react"
 
+const CATEGORY_LABELS: Record<string, string> = {
+  all: "Todas las líneas",
+  novias: "Novias",
+  "15-anos": "15 Años",
+  fiesta: "Fiesta",
+  mitzvah: "Mitzvá",
+  "padrinos-y-madrinas": "Padrinos y Madrinas"
+}
+
 // Client-side catalog component that reads SearchParams
 function CatalogContent() {
   const searchParams = useSearchParams()
@@ -120,7 +129,7 @@ function CatalogContent() {
                         : "border-transparent text-muted-foreground hover:text-foreground hover:bg-muted/50"
                     }`}
                   >
-                    <span className="capitalize">{cat === "all" ? "Todas las líneas" : cat.replace("-", " ")}</span>
+                    <span>{CATEGORY_LABELS[cat]}</span>
                     {selectedCategory === cat && <Check className="w-3.5 h-3.5" />}
                   </button>
                 ))}
@@ -206,7 +215,7 @@ function CatalogContent() {
                 <span className="text-muted-foreground mr-1">Filtros activos:</span>
                 {selectedCategory !== "all" && (
                   <span className="bg-accent/10 border border-accent/25 text-accent px-2 py-1 flex items-center gap-1.5 text-[10px] uppercase tracking-wider">
-                    Categoría: {selectedCategory}
+                    Categoría: {CATEGORY_LABELS[selectedCategory]}
                     <X className="w-3 h-3 cursor-pointer" onClick={() => setSelectedCategory("all")} />
                   </span>
                 )}
@@ -286,7 +295,7 @@ function CatalogContent() {
                     {/* Metadata Card */}
                     <div className="p-6 flex flex-col flex-grow">
                       <span className="text-[9px] tracking-[0.2em] text-accent uppercase font-bold mb-1">
-                        {p.category === '15-anos' ? '15 Años' : p.category.replace("-", " ")}
+                        {CATEGORY_LABELS[p.category]}
                       </span>
                       <h3 className="font-serif text-base md:text-lg text-foreground group-hover:text-accent transition-colors duration-300 mb-2">
                         {p.name}
@@ -348,7 +357,7 @@ function CatalogContent() {
                           : "border-transparent text-muted-foreground hover:text-foreground"
                       }`}
                     >
-                      <span className="capitalize">{cat === "all" ? "Todas las líneas" : cat.replace("-", " ")}</span>
+                      <span>{CATEGORY_LABELS[cat]}</span>
                     </button>
                   ))}
                 </div>

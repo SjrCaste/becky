@@ -1,5 +1,5 @@
 import { supabase } from './supabase'
-import { Product, Testimonial, TimelineEvent, HomeSetting, Banner } from './data'
+import { Product, Testimonial, TimelineEvent, HomeSetting, Banner, Category, Fabric } from './data'
 
 export const getProducts = async (): Promise<Product[]> => {
   const { data, error } = await supabase
@@ -331,5 +331,123 @@ export const deleteBanner = async (id: string): Promise<boolean> => {
     return false
   }
   
+  return true
+}
+
+// ---------------- CATEGORIES ----------------
+
+export const getCategories = async (): Promise<Category[]> => {
+  const { data, error } = await supabase
+    .from('categories')
+    .select('*')
+    .order('slug', { ascending: true })
+
+  if (error) {
+    console.error('Error fetching categories:', error)
+    return []
+  }
+  return data as Category[]
+}
+
+export const createCategory = async (categoryData: Partial<Category>): Promise<Category | null> => {
+  const { data, error } = await supabase
+    .from('categories')
+    .insert([categoryData])
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error creating category:', error)
+    return null
+  }
+  return data as Category
+}
+
+export const updateCategory = async (slug: string, categoryData: Partial<Category>): Promise<Category | null> => {
+  const { data, error } = await supabase
+    .from('categories')
+    .update(categoryData)
+    .eq('slug', slug)
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error updating category:', error)
+    return null
+  }
+  return data as Category
+}
+
+export const deleteCategory = async (slug: string): Promise<boolean> => {
+  const { error } = await supabase
+    .from('categories')
+    .delete()
+    .eq('slug', slug)
+
+  if (error) {
+    console.error('Error deleting category:', error)
+    return false
+  }
+  return true
+}
+
+// ---------------- FABRICS (GALLERIES) ----------------
+
+export const getFabrics = async (): Promise<Fabric[]> => {
+  const { data, error } = await supabase
+    .from('fabrics')
+    .select('*')
+    .order('id', { ascending: true })
+
+  if (error) {
+    console.error('Error fetching fabrics:', error)
+    return []
+  }
+  return data as Fabric[]
+}
+
+export const createFabric = async (fabricData: Partial<Fabric>): Promise<Fabric | null> => {
+  const newFabric = {
+    ...fabricData,
+    id: fabricData.id || `fabric-${Date.now()}`
+  }
+  const { data, error } = await supabase
+    .from('fabrics')
+    .insert([newFabric])
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error creating fabric:', error)
+    return null
+  }
+  return data as Fabric
+}
+
+export const updateFabric = async (id: string, fabricData: Partial<Fabric>): Promise<Fabric | null> => {
+  const { data, error } = await supabase
+    .from('fabrics')
+    .update(fabricData)
+    .eq('id', id)
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error updating fabric:', error)
+    return null
+  }
+  return data as Fabric
+}
+
+export const deleteFabric = async (id: string): Promise<boolean> => {
+  const { error } = await supabase
+    .from('fabrics')
+    .delete()
+    .eq('id', id)
+
+  if (error) {
+    console.error('Error deleting fabric:', error)
+    return false
+  }
   return true
 }

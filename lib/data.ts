@@ -24,6 +24,15 @@ export interface Fabric {
   details: string[];
 }
 
+export interface Category {
+  slug: string;
+  title: string;
+  tagline: string;
+  image: string;
+  subcategories: string[];
+  description: string;
+}
+
 export interface TimelineEvent {
   id?: string;
   year: string;
