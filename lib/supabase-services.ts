@@ -1,5 +1,5 @@
 import { supabase } from './supabase'
-import { Product, Testimonial, TimelineEvent } from './data'
+import { Product, Testimonial, TimelineEvent, HomeSetting, Banner } from './data'
 
 export const getProducts = async (): Promise<Product[]> => {
   const { data, error } = await supabase
@@ -221,6 +221,113 @@ export const deleteTimelineEvent = async (id: string): Promise<boolean> => {
 
   if (error) {
     console.error('Error deleting timeline event:', error)
+    return false
+  }
+  
+  return true
+}
+
+// ---------------- HOME SETTINGS ----------------
+
+export const getHomeSettings = async (): Promise<HomeSetting | null> => {
+  const { data, error } = await supabase
+    .from('home_settings')
+    .select('*')
+    .eq('id', 1)
+    .single()
+    
+  if (error) {
+    console.error('Error fetching home settings:', error)
+    return null
+  }
+  return data as HomeSetting
+}
+
+export const updateHomeSettings = async (settingsData: Partial<HomeSetting>): Promise<HomeSetting | null> => {
+  const { data, error } = await supabase
+    .from('home_settings')
+    .update(settingsData)
+    .eq('id', 1)
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error updating home settings:', error)
+    return null
+  }
+  
+  return data as HomeSetting
+}
+
+// ---------------- BANNERS ----------------
+
+export const getBanners = async (activeOnly = false): Promise<Banner[]> => {
+  let query = supabase
+    .from('banners')
+    .select('*')
+    .order('sort_order', { ascending: true })
+    
+  if (activeOnly) {
+    query = query.eq('is_active', true)
+  }
+
+  const { data, error } = await query
+    
+  if (error) {
+    console.error('Error fetching banners:', error)
+    return []
+  }
+  return data as Banner[]
+}
+
+export const createBanner = async (bannerData: Partial<Banner>): Promise<Banner | null> => {
+  const newBanner = {
+    id: bannerData.id || `banner-${Date.now()}`,
+    title: bannerData.title || "Nuevo Banner",
+    image: bannerData.image || "",
+    link_url: bannerData.link_url || "",
+    is_active: bannerData.is_active !== undefined ? bannerData.is_active : true,
+    sort_order: bannerData.sort_order || 0,
+  }
+
+  const { data, error } = await supabase
+    .from('banners')
+    .insert([newBanner])
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error creating banner:', error)
+    return null
+  }
+  
+  return data as Banner
+}
+
+export const updateBanner = async (id: string, bannerData: Partial<Banner>): Promise<Banner | null> => {
+  const { data, error } = await supabase
+    .from('banners')
+    .update(bannerData)
+    .eq('id', id)
+    .select()
+    .single()
+
+  if (error) {
+    console.error('Error updating banner:', error)
+    return null
+  }
+  
+  return data as Banner
+}
+
+export const deleteBanner = async (id: string): Promise<boolean> => {
+  const { error } = await supabase
+    .from('banners')
+    .delete()
+    .eq('id', id)
+
+  if (error) {
+    console.error('Error deleting banner:', error)
     return false
   }
   

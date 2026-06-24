@@ -4,8 +4,9 @@ import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { ChevronDown, MessageCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { HomeSetting } from "@/lib/data"
 
-export function HeroSection() {
+export function HeroSection({ homeSetting }: { homeSetting?: HomeSetting | null }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const sectionRef = useRef<HTMLDivElement>(null)
 
@@ -41,7 +42,7 @@ export function HeroSection() {
         className="absolute inset-0 transition-transform duration-700 ease-out scale-105"
         style={{
           transform: `translate(${mousePosition.x}px, ${mousePosition.y}px) scale(1.08)`,
-          backgroundImage: 'url("https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1920&q=90")',
+          backgroundImage: `url("${homeSetting?.background_image || 'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=1920&q=90'}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -88,12 +89,12 @@ export function HeroSection() {
 
         {/* Title */}
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-primary-foreground leading-tight mb-6 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300 tracking-wide">
-          Sedería Becky
+          {homeSetting?.title || "Sedería Becky"}
         </h1>
 
         {/* Subtext */}
         <p className="text-primary-foreground/80 text-base md:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
-          Alta costura, vestidos de novia, 15 años y ceremonias únicas confeccionadas con dedicación artesanal en Buenos Aires.
+          {homeSetting?.subtitle || "Alta costura, vestidos de novia, 15 años y ceremonias únicas confeccionadas con dedicación artesanal en Buenos Aires."}
         </p>
 
         {/* Buttons */}

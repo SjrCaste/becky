@@ -41,6 +41,22 @@ export interface Testimonial {
   date: string;
 }
 
+export interface HomeSetting {
+  id: number;
+  title: string;
+  subtitle: string;
+  background_image: string;
+}
+
+export interface Banner {
+  id: string;
+  title: string;
+  image: string;
+  link_url?: string;
+  is_active: boolean;
+  sort_order: number;
+}
+
 export const PRODUCTS: Product[] = [
   // NOVIAS
   {

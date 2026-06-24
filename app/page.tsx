@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
-import { getTestimonials, getTimelineEvents } from "@/lib/supabase-services"
+import { getTestimonials, getTimelineEvents, getHomeSettings, getBanners } from "@/lib/supabase-services"
 import { HeroSection } from "@/components/hero-section"
+import { PromotionalBanners } from "@/components/promotional-banners"
 import { AboutSection } from "@/components/about-section"
 import { CollectionCategories } from "@/components/collection-categories"
 import { GodparentsSection } from "@/components/godparents-section"
@@ -13,6 +14,8 @@ import { Footer } from "@/components/footer"
 export default async function Home() {
   const testimonials = await getTestimonials();
   const timelineEvents = await getTimelineEvents();
+  const homeSettings = await getHomeSettings();
+  const banners = await getBanners(true); // active only
 
   return (
     <main className="min-h-screen relative overflow-hidden bg-background">
@@ -20,7 +23,10 @@ export default async function Home() {
       <Header />
 
       {/* 1. Cinematic Hero Section */}
-      <HeroSection />
+      <HeroSection homeSetting={homeSettings} />
+
+      {/* 1.5 Promotional Banners */}
+      <PromotionalBanners banners={banners} />
 
       {/* 2. Nuestra Historia Section */}
       <AboutSection timelineEvents={timelineEvents} />
