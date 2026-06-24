@@ -1,10 +1,10 @@
-"use client"
-
 import Image from "next/image"
-import { TIMELINE } from "@/lib/data"
+import { TimelineEvent } from "@/lib/data"
 import { Sparkles, Scissors, Users2, Award } from "lucide-react"
 
-export function AboutSection() {
+export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent[] }) {
+  if (!timelineEvents || timelineEvents.length === 0) return null;
+
   return (
     <section id="historia" className="py-24 md:py-32 bg-card relative overflow-hidden">
       {/* Decorative background details */}
@@ -100,7 +100,7 @@ export function AboutSection() {
             {/* Connecting golden line on desktop */}
             <div className="hidden lg:block absolute top-[110px] left-8 right-8 h-[1px] bg-gradient-to-r from-accent/10 via-accent/50 to-accent/10 pointer-events-none" />
 
-            {TIMELINE.map((item, index) => (
+            {timelineEvents.map((item, index) => (
               <div key={item.year} className="group flex flex-col items-center text-center">
                 {/* Year Badge */}
                 <div className="relative w-16 h-16 rounded-full bg-muted border border-border/80 flex items-center justify-center mb-6 group-hover:border-accent group-hover:bg-accent/10 transition-all duration-500 z-10">

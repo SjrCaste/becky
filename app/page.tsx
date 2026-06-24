@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { getTestimonials, getTimelineEvents } from "@/lib/supabase-services"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { CollectionCategories } from "@/components/collection-categories"
@@ -9,7 +10,10 @@ import { HomeTestimonials } from "@/components/home-testimonials"
 import { EditorialGallery } from "@/components/editorial-gallery"
 import { Footer } from "@/components/footer"
 
-export default function Home() {
+export default async function Home() {
+  const testimonials = await getTestimonials();
+  const timelineEvents = await getTimelineEvents();
+
   return (
     <main className="min-h-screen relative overflow-hidden bg-background">
       {/* Navigation Header */}
@@ -19,7 +23,7 @@ export default function Home() {
       <HeroSection />
 
       {/* 2. Nuestra Historia Section */}
-      <AboutSection />
+      <AboutSection timelineEvents={timelineEvents} />
 
       {/* 3. Categorías Principales */}
       <CollectionCategories />
@@ -34,7 +38,7 @@ export default function Home() {
       <BookingForm />
 
       {/* 8. Testimonios */}
-      <HomeTestimonials />
+      <HomeTestimonials testimonials={testimonials} />
 
       {/* 9. Galería Editorial */}
       <EditorialGallery />

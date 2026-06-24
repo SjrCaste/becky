@@ -2,18 +2,18 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { TESTIMONIALS } from "@/lib/data"
+import { Testimonial } from "@/lib/data"
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 
-export function HomeTestimonials() {
+export function HomeTestimonials({ testimonials }: { testimonials: Testimonial[] }) {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? TESTIMONIALS.length - 1 : prev - 1))
+    setActiveIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))
   }
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === TESTIMONIALS.length - 1 ? 0 : prev + 1))
+    setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))
   }
 
   useEffect(() => {
@@ -23,7 +23,9 @@ export function HomeTestimonials() {
     return () => clearInterval(timer)
   }, [])
 
-  const current = TESTIMONIALS[activeIndex]
+  if (!testimonials || testimonials.length === 0) return null;
+
+  const current = testimonials[activeIndex]
 
   return (
     <section className="py-24 md:py-32 bg-card relative overflow-hidden">
@@ -84,7 +86,7 @@ export function HomeTestimonials() {
         <div className="flex justify-between items-center mt-8">
           {/* Indicators */}
           <div className="flex gap-2">
-            {TESTIMONIALS.map((_, i) => (
+            {testimonials.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setActiveIndex(i)}
