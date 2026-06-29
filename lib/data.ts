@@ -207,6 +207,258 @@ export const PRODUCTS: Product[] = [
     ],
     features: ['Seda salvaje de alta densidad', 'Sobre-saco de encaje Richelieu', 'Bordados artesanales dorados', 'Mangas 3/4 refinadas'],
     tags: ['Madrina', 'Seda Salvaje', 'Richelieu', 'Ceremonia']
+  },
+
+  // COLECCIÓN REAL - Fotos de clientas Sedería Becky
+  {
+    id: 'real-15-olivia-rojo',
+    name: 'Vestido Olivia Glitter Rojo',
+    category: '15-anos',
+    subCategory: 'Brillante',
+    description: 'Vestido de 15 años en glitter rojo intenso, con corpiño strapless bordado en pedrería y una falda voluminosa de capas brillantes. Confeccionado para Olivia, una de nuestras quinceañeras.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rojo Glitter'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Brillante', 'Exclusivo'],
+    images: [
+      '/images/coleccion-real/rojo-glitter-olivia-1.jpg',
+      '/images/coleccion-real/rojo-glitter-olivia-2.jpg',
+      '/images/coleccion-real/rojo-glitter-olivia-3.jpg'
+    ],
+    features: ['Tela glitter de alto brillo', 'Corpiño strapless bordado', 'Falda de gran volumen', 'Corona a juego'],
+    tags: ['15 Años', 'Rojo', 'Glitter', 'Princesa']
+  },
+  {
+    id: 'real-15-esmeralda-dorado',
+    name: 'Vestido Esmeralda Imperial',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en satén verde esmeralda con bordados dorados artesanales y hombros descubiertos. Una silueta imperial confeccionada para una quinceañera real de Sedería Becky.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Verde Esmeralda', 'Dorado'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Bordado', 'Exclusivo'],
+    images: [
+      '/images/coleccion-real/esmeralda-dorado-1.jpg'
+    ],
+    features: ['Satén verde esmeralda', 'Bordado dorado artesanal', 'Escote off-shoulder', 'Falda con volumen estructurado'],
+    tags: ['15 Años', 'Esmeralda', 'Dorado', 'Bordado'],
+    isFeatured: true
+  },
+  {
+    id: 'real-madrina-marfil-sirena',
+    name: 'Conjunto Madrina Marfil Sirena',
+    category: 'padrinos-y-madrinas',
+    subCategory: 'Madrinas',
+    description: 'Vestido de madrina en satén marfil, corte sirena estructurado y escote corazón. Acompañó a una quinceañera de Sedería Becky el día de su fiesta.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Marfil'],
+    sizes: ['M', 'L', 'A medida'],
+    styles: ['Sirena', 'Elegante', 'Cortejo'],
+    images: [
+      '/images/coleccion-real/madrina-marfil-sirena-1.jpg'
+    ],
+    features: ['Satén marfil de alta calidad', 'Corte sirena estructurado', 'Escote corazón', 'Cola desmontable'],
+    tags: ['Madrina', 'Marfil', 'Sirena', 'Ceremonia']
+  },
+  {
+    id: 'real-fiesta-rosa-capas',
+    name: 'Vestido Rosa Encaje en Capas',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestido de fiesta en encaje rosa con cuerpo de corsetería y falda de capas con abertura frontal. Ideal para graduaciones y eventos sociales de gala.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa Palo'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Elegante', 'Moderno'],
+    images: [
+      '/images/coleccion-real/rosa-encaje-capas-1.jpg'
+    ],
+    features: ['Encaje floral en relieve', 'Corpiño de corsetería', 'Falda de capas con abertura', 'Escote off-shoulder'],
+    tags: ['Fiesta', 'Rosa', 'Encaje', 'Gala']
+  },
+  {
+    id: 'real-15-marty-azul',
+    name: 'Vestido Marty Glitter Azul',
+    category: '15-anos',
+    subCategory: 'Brillante',
+    description: 'Vestido de 15 años en tul glitter azul noche, con corpiño de breteles y espalda con atado de cintas. Confeccionado para Marty, quinceañera de Sedería Becky.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul Noche Glitter'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Brillante', 'Exclusivo'],
+    images: [
+      '/images/coleccion-real/azul-glitter-marty-1.jpg',
+      '/images/coleccion-real/azul-glitter-marty-2.jpg',
+      '/images/coleccion-real/azul-glitter-marty-3.jpg',
+      '/images/coleccion-real/azul-glitter-marty-4.jpg'
+    ],
+    features: ['Tul glitter azul noche', 'Corpiño con breteles finos', 'Espalda con atado de cintas', 'Falda de gran vuelo'],
+    tags: ['15 Años', 'Azul', 'Glitter', 'Princesa']
+  },
+  {
+    id: 'real-15-marty-salida',
+    name: 'Vestido de Salida Marty Azul',
+    category: '15-anos',
+    subCategory: 'Vestido de Salida',
+    description: 'Segundo vestido de 15 años (vestido de salida) en bustier azul bordado con falda corta de tul, ideal para bailar el resto de la fiesta. Conjunto a juego con el vestido principal de Marty.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul Noche'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Moderno', 'Vestido de Salida'],
+    images: [
+      '/images/coleccion-real/azul-salida-mini-1.jpg',
+      '/images/coleccion-real/azul-salida-mini-2.jpg'
+    ],
+    features: ['Bustier bordado en pedrería', 'Falda corta de tul con vuelo', 'Conjunto dos piezas', 'Ideal para la fiesta'],
+    tags: ['15 Años', 'Vestido de Salida', 'Azul', 'Corto']
+  },
+  {
+    id: 'real-15-rosa-palo-jardin',
+    name: 'Vestido Rosa Palo Jardín',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en tul rosa palo con brillos sutiles, corpiño de corsetería y escote off-shoulder. Fotografiado en una celebración de jardín de una quinceañera de Sedería Becky.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa Palo'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Romántico', 'Exclusivo'],
+    images: [
+      '/images/coleccion-real/rosa-palo-jardin-1.jpg',
+      '/images/coleccion-real/rosa-palo-jardin-2.jpg'
+    ],
+    features: ['Tul rosa palo con brillo sutil', 'Corpiño de corsetería', 'Escote off-shoulder', 'Falda de gran volumen'],
+    tags: ['15 Años', 'Rosa', 'Romántico', 'Princesa']
+  },
+  {
+    id: 'real-15-lila-corazon',
+    name: 'Vestido Lila Corazón',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en tul lila glitter con escote corazón y hombros descubiertos. Una silueta clásica de princesa confeccionada para una quinceañera de Sedería Becky.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Lila'],
+    sizes: ['M', 'L', 'A medida'],
+    styles: ['Princesa', 'Brillante'],
+    images: [
+      '/images/coleccion-real/lila-corazon-1.jpg'
+    ],
+    features: ['Tul lila con brillo', 'Escote corazón', 'Hombros descubiertos', 'Falda de gran volumen'],
+    tags: ['15 Años', 'Lila', 'Princesa']
+  },
+  {
+    id: 'real-15-rosa-salida',
+    name: 'Vestido de Salida Rosa Corset',
+    category: '15-anos',
+    subCategory: 'Vestido de Salida',
+    description: 'Vestido de salida corto en corset rosa con falda de tul, usado para la segunda parte de la fiesta de 15. Cómodo y elegante para disfrutar del festejo.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa Palo'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Moderno', 'Vestido de Salida'],
+    images: [
+      '/images/coleccion-real/rosa-salida-mini-1.jpg'
+    ],
+    features: ['Corset estructurado', 'Falda corta de tul', 'Hombros descubiertos', 'Ideal para bailar'],
+    tags: ['15 Años', 'Vestido de Salida', 'Rosa', 'Corto']
+  },
+  {
+    id: 'real-fiesta-oliva-drapeado',
+    name: 'Vestido Oliva Drapeado',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestido de fiesta largo en raso color oliva, con drapeado asimétrico y hombros descubiertos. Una opción elegante y moderna para eventos sociales y galas.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Verde Oliva'],
+    sizes: ['XS', 'S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Moderno', 'Gala'],
+    images: [
+      '/images/coleccion-real/oliva-drapeado-1.jpg'
+    ],
+    features: ['Raso de alta calidad', 'Drapeado asimétrico artesanal', 'Hombros descubiertos', 'Caída fluida'],
+    tags: ['Fiesta', 'Oliva', 'Drapeado', 'Gala']
+  },
+  {
+    id: 'real-fiesta-bordo-gotico',
+    name: 'Vestido Bordó Romántico',
+    category: 'fiesta',
+    subCategory: 'Elegancia Pura',
+    description: 'Vestido de fiesta en bordó con corset y falda de capas drapeadas, para un look de fiesta con personalidad y un toque romántico-dramático.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Bordó'],
+    sizes: ['XS', 'S', 'M', 'A medida'],
+    styles: ['Dramático', 'Moderno'],
+    images: [
+      '/images/coleccion-real/bordo-gotico-1.jpg'
+    ],
+    features: ['Corset estructurado', 'Falda de capas drapeadas', 'Mangas de gasa transparente', 'Detalles en cintas'],
+    tags: ['Fiesta', 'Bordó', 'Corset', 'Moderno']
+  },
+  {
+    id: 'real-stock-beige-encaje',
+    name: 'Vestidos Beige Encaje Floral (Corto y Largo)',
+    category: 'fiesta',
+    subCategory: 'Vestidos Cortos',
+    description: 'Disponibles en stock: vestido beige de encaje floral en versión corta y versión larga, con escote en V y cinturón de pedrería. Misma confección, dos opciones de largo a elección.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Beige', 'Champagne'],
+    sizes: ['S', 'M', 'L'],
+    styles: ['Romántico', 'Elegante'],
+    images: [
+      '/images/coleccion-real/beige-encaje-par-1.jpg'
+    ],
+    features: ['Encaje floral bordado', 'Cinturón de pedrería', 'Opción corta o larga', 'Disponible en stock'],
+    tags: ['Fiesta', 'Beige', 'Encaje', 'En Stock']
+  },
+  {
+    id: 'real-madrina-verde-azulado',
+    name: 'Vestido Madrina Verde Azulado',
+    category: 'padrinos-y-madrinas',
+    subCategory: 'Madrinas',
+    description: 'Vestido de madrina en raso verde azulado con corpiño de encaje bordado, mangas largas de encaje y abertura lateral. Una opción sofisticada para acompañar bodas y ceremonias.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Verde Azulado'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Sofisticado', 'Elegante'],
+    images: [
+      '/images/coleccion-real/verde-azulado-manga-larga-1.jpg'
+    ],
+    features: ['Corpiño de encaje bordado', 'Mangas largas de encaje', 'Abertura lateral', 'Caída de raso fluido'],
+    tags: ['Madrina', 'Verde Azulado', 'Encaje', 'Ceremonia']
+  },
+  {
+    id: 'real-fiesta-plata-fringe',
+    name: 'Vestido Plata Fringe',
+    category: 'fiesta',
+    subCategory: 'Vestidos Cortos',
+    description: 'Vestido de fiesta corto en flecos plateados con escote strapless. Una opción brillante y moderna para fiestas y celebraciones nocturnas.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Plata'],
+    sizes: ['XS', 'S', 'M'],
+    styles: ['Moderno', 'Brillante'],
+    images: [
+      '/images/coleccion-real/plata-fringe-1.jpg'
+    ],
+    features: ['Flecos plateados metalizados', 'Escote strapless', 'Corte corto entallado', 'Brillo total'],
+    tags: ['Fiesta', 'Plata', 'Flecos', 'Corto']
+  },
+  {
+    id: 'real-novia-encaje-floral',
+    name: 'Vestido Novia Encaje Floral',
+    category: 'novias',
+    subCategory: 'Clásico',
+    description: 'Vestido de novia en tul con apliques de encaje floral, escote en V y espalda semi transparente bordada. Una silueta clásica y romántica para el día de la boda.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Marfil'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Clásico', 'Romántico'],
+    images: [
+      '/images/coleccion-real/novia-encaje-floral-1.jpg',
+      '/images/coleccion-real/novia-encaje-floral-2.jpg'
+    ],
+    features: ['Apliques de encaje floral', 'Escote en V', 'Espalda semi transparente bordada', 'Falda de tul fluida'],
+    tags: ['Novia', 'Encaje', 'Clásico', 'Romántico'],
+    isFeatured: true
   }
 ];
 
