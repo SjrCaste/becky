@@ -8,7 +8,7 @@ const categories = [
     slug: "novias",
     title: "Vestidos de Novia",
     tagline: "Bridal Couture",
-    image: "https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/novia-encaje-floral-1.jpg",
     subcategories: ["En Stock", "A Medida", "Diseño Personalizado"],
     description: "Diseños únicos para cada novia. Contamos con vestidos en stock y opciones personalizadas para crear el vestido que siempre soñaste."
   },
@@ -16,7 +16,7 @@ const categories = [
     slug: "15-anos",
     title: "Vestidos de 15 Años",
     tagline: "Debutante Elegance",
-    image: "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/esmeralda-dorado-1.jpg",
     subcategories: ["Asesoramiento Personalizado", "Confección a Medida", "Modelos Exclusivos"],
     description: "Modelos exclusivos para una noche inolvidable, con asesoramiento personalizado y confección a medida."
   },
@@ -24,7 +24,7 @@ const categories = [
     slug: "fiesta",
     title: "Vestidos de Fiesta",
     tagline: "Gala & Eventos",
-    image: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/rosa-encaje-capas-1.jpg",
     subcategories: ["Graduaciones", "Eventos Sociales", "Galas"],
     description: "Opciones elegantes y modernas para graduaciones, eventos sociales, galas y celebraciones especiales."
   },
@@ -32,7 +32,7 @@ const categories = [
     slug: "padrinos-y-madrinas",
     title: "Madrinas y Cortejos",
     tagline: "Cortejo & Damas de Honor",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/madrina-marfil-sirena-1.jpg",
     subcategories: ["Madrinas", "Damas de Honor", "Cortejos"],
     description: "Diseños sofisticados para madrinas, damas de honor y cortejos, adaptados a cada estilo y evento."
   },
@@ -40,7 +40,7 @@ const categories = [
     slug: "alta-costura-a-medida",
     title: "Alta Costura y Confección a Medida",
     tagline: "Atelier Personalizado",
-    image: "https://images.unsplash.com/photo-1591551970139-29b552dd8539?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/verde-azulado-manga-larga-1.jpg",
     subcategories: ["Atención Personalizada", "Confección Exclusiva", "Terminaciones de Calidad"],
     description: "Prendas confeccionadas especialmente para cada clienta, con atención personalizada y terminaciones de calidad."
   },
@@ -48,7 +48,7 @@ const categories = [
     slug: "vestidos-en-stock",
     title: "Vestidos en Stock",
     tagline: "Entrega Inmediata",
-    image: "https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/beige-encaje-par-1.jpg",
     subcategories: ["Disponibilidad Inmediata", "Pruebas en el Local", "Amplia Variedad"],
     description: "Amplia variedad de modelos disponibles para entrega inmediata y pruebas en el local."
   },
