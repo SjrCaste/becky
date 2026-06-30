@@ -64,7 +64,7 @@ const categories = [
     slug: "telas-y-sederia",
     title: "Telas y Sedería",
     tagline: "Importadas de Lujo",
-    image: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1771098206650-81d713e2e2b9?auto=format&fit=crop&w=800&q=80",
     subcategories: ["Encajes", "Tul y Satén", "Brillos y Piedras"],
     description: "Gran variedad de encajes, tul, satén, brillos, piedras y telas importadas disponibles para confección."
   },
