@@ -453,12 +453,163 @@ export const PRODUCTS: Product[] = [
     sizes: ['S', 'M', 'L', 'A medida'],
     styles: ['Clásico', 'Romántico'],
     images: [
-      '/images/coleccion-real/novia-encaje-floral-1.jpg',
-      '/images/coleccion-real/novia-encaje-floral-2.jpg'
+      '/images/IMAGES2/novia-encaje-floral-1.jpg',
+      '/images/IMAGES2/novia-encaje-floral-2.jpg',
+      '/images/IMAGES2/novia-encaje-floral-3.jpg'
     ],
     features: ['Apliques de encaje floral', 'Escote en V', 'Espalda semi transparente bordada', 'Falda de tul fluida'],
     tags: ['Novia', 'Encaje', 'Clásico', 'Romántico'],
     isFeatured: true
+  },
+  // Nuevas adiciones IMAGES2 - Julio 2026
+  {
+    id: 'real-dama-blanco-volante',
+    name: 'Vestido Dama Blanco Volante',
+    category: 'fiesta',
+    subCategory: 'Vestidos Cortos',
+    description: 'Elegante vestido corto en blanco off-shoulder con volantes en el escote. Perfecto para damas de honor, eventos de fiesta y celebraciones especiales. Confeccionado con acabados de calidad.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['XS', 'S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Moderno'],
+    images: [
+      '/images/IMAGES2/vestido-dama-blanco-volante-1.jpg',
+      '/images/IMAGES2/vestido-dama-blanco-volante-2.jpg'
+    ],
+    features: ['Off-shoulder con volantes', 'Corte corto entallado', 'Blanco puro', 'Ideal para bodas y eventos'],
+    tags: ['Fiesta', 'Dama', 'Blanco', 'Corto']
+  },
+  {
+    id: 'real-boda-novia-encaje-tradicional',
+    name: 'Vestido Boda Novia Encaje Tradicional',
+    category: 'novias',
+    subCategory: 'Ceremonia',
+    description: 'Hermoso vestido de novia con encaje fino en blanco, diseñado para la ceremonia de boda. Fotografiado en una boda tradicional nocturna, mostrando la elegancia atemporal de la confección artesanal.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Marfil'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Clásico', 'Ceremonial'],
+    images: [
+      '/images/IMAGES2/boda-novia-encaje-1.jpg',
+      '/images/IMAGES2/boda-novia-encaje-2.jpg'
+    ],
+    features: ['Encaje bordado fino', 'Falda fluida y voluminosa', 'Detalles de pedrería sutil', 'Confección artesanal'],
+    tags: ['Novia', 'Boda', 'Encaje', 'Clásico']
+  },
+  {
+    id: 'real-boda-novia-ceremonia-iglesia',
+    name: 'Vestido Boda Novia Ceremonia Iglesia',
+    category: 'novias',
+    subCategory: 'Ceremonia',
+    description: 'Vestido de novia fotografiado en ceremonia de iglesia. Diseño clásico en blanco con encaje delicado y falda de tul voluminosa, ideal para bodas formales y ceremonias religiosas.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Marfil'],
+    sizes: ['S', 'M', 'L', 'XL', 'A medida'],
+    styles: ['Clásico', 'Ceremonia'],
+    images: [
+      '/images/IMAGES2/boda-novia-iglesia-1.jpg',
+      '/images/IMAGES2/boda-novia-iglesia-2.jpg'
+    ],
+    features: ['Encaje de iglesia', 'Falda de tul glitter', 'Escote corazón', 'Cola larga ceremonial'],
+    tags: ['Novia', 'Boda', 'Iglesia', 'Ceremonial']
+  },
+  {
+    id: 'real-bat-mitzvah-rosa-brillante',
+    name: 'Vestido Bat Mitzvá Rosa Tul Brillante',
+    category: 'mitzvah',
+    subCategory: 'Bat Mitzvá',
+    description: 'Vestido de Bat Mitzvá en rosa pastel con tul brillante y corpiño bordado. Un diseño juvenil y sofisticado para la celebración de Bat Mitzvá. Fotografiado en azotea con tiara y detalles elegantes.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa Pastel'],
+    sizes: ['XS', 'S', 'M', 'A medida'],
+    styles: ['Juvenil', 'Elegante', 'Ceremonia'],
+    images: [
+      '/images/IMAGES2/bat-mitzvah-rosa-1.jpg',
+      '/images/IMAGES2/bat-mitzvah-rosa-2.jpg'
+    ],
+    features: ['Tul brillante rosa pastel', 'Corpiño bordado en pedrería', 'Falda voluminosa y ligera', 'Ideal para Bat Mitzvá'],
+    tags: ['Bat Mitzvá', 'Rosa', 'Brillante', 'Juvenil'],
+    isFeatured: true
+  },
+  {
+    id: 'real-fiesta-azul-pastel-tul',
+    name: 'Vestido Fiesta Azul Pastel Tul',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Elegante vestido de fiesta en azul pastel con tul delicado, corpiño off-shoulder y falda voluminosa. Ideal para eventos especiales, bailes de graduación y celebraciones de 15 años.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul Pastel'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Juvenil', 'Elegante'],
+    images: [
+      '/images/IMAGES2/fiesta-azul-pastel.jpg'
+    ],
+    features: ['Tul azul pastel', 'Off-shoulder elegante', 'Falda voluminosa', 'Corpiño estructurado'],
+    tags: ['Fiesta', 'Azul', 'Tul', 'Elegante']
+  },
+  {
+    id: 'real-novia-azulado-piedras',
+    name: 'Vestido Novia Azulado Piedras Swarovski',
+    category: 'novias',
+    subCategory: 'Alta Costura',
+    description: 'Vestido de novia sofisticado con tonos azulados sutiles y bordado con piedras de cristal. Corpiño estructurado de corsetería y falda de tul voluminosa. Confección artesanal de lujo.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Azulado', 'Marfil'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Alta Costura', 'Clásico'],
+    images: [
+      '/images/IMAGES2/novia-azulado-piedras.jpg'
+    ],
+    features: ['Piedras de cristal Swarovski', 'Tonos azulados sutiles', 'Corpiño de corsetería', 'Falda de tul glitter'],
+    tags: ['Novia', 'Alta Costura', 'Piedras', 'Lujo']
+  },
+  {
+    id: 'real-novia-interior-elegante',
+    name: 'Vestido Novia Interior Elegante',
+    category: 'novias',
+    subCategory: 'Minimalista',
+    description: 'Vestido de novia fotografiado en interior elegante con iluminación sofisticada. Diseño en blanco con encaje fino en el corpiño y falda de tul delicado. Perfectamente confeccionado para lucir radiante.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Minimalista'],
+    images: [
+      '/images/IMAGES2/novia-interior-elegante.jpg'
+    ],
+    features: ['Encaje fino en corpiño', 'Tul delicado en falda', 'Escote V sutil', 'Confección impecable'],
+    tags: ['Novia', 'Blanco', 'Elegante', 'Interior']
+  },
+  {
+    id: 'real-fiesta-amarillo-elegante',
+    name: 'Vestido Fiesta Amarillo Elegante',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Sofisticado vestido de fiesta en amarillo pastel con escote strapless y drapeado lateral elegante. Una opción radiante para eventos de gala, graduaciones y celebraciones especiales.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Amarillo Pastel'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Drapeado'],
+    images: [
+      '/images/IMAGES2/fiesta-amarillo-elegante.jpg'
+    ],
+    features: ['Amarillo pastel luminoso', 'Escote strapless', 'Drapeado lateral artesanal', 'Caída fluida elegante'],
+    tags: ['Fiesta', 'Amarillo', 'Drapeado', 'Elegante']
+  },
+  {
+    id: 'real-boda-novia-corte-alto',
+    name: 'Vestido Boda Novia Corte Alto Sentada',
+    category: 'novias',
+    subCategory: 'Moderno',
+    description: 'Vestido de novia moderno con corte alto a un lado, ideal para novias que desean una opción cómoda y sofisticada. Fotografiado sentada en una boda exterior con arquitectura colonial.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Moderno', 'Sofisticado'],
+    images: [
+      '/images/IMAGES2/boda-novia-corte-alto.jpg'
+    ],
+    features: ['Corte alto para movilidad', 'Satén fluido', 'Escote corazón', 'Falda drapeada asimétrica'],
+    tags: ['Novia', 'Moderno', 'Boda', 'Sofisticado']
   }
 ];
 
