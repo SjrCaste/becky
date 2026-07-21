@@ -719,7 +719,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-look-blanco-fiesta',
-    name: '15 Anos - Look Blanco de Fiesta',
+    name: '15 Años - Look Blanco de Fiesta',
     category: '15-anos',
     subCategory: 'Moderno',
     description: 'Look de fiesta en blanco de corte sencillo, con capa de plumas para la entrada y baile en pista. Fotografiado en festejo real de 15 años.',
@@ -738,7 +738,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-dorado-trono',
-    name: '15 Anos - Vestido Dorado de Trono',
+    name: '15 Años - Vestido Dorado de Trono',
     category: '15-anos',
     subCategory: 'Princesa',
     description: 'Vestido de 15 años en tul dorado brillante con corpiño bordado y falda amplia tipo princesa, fotografiado en la clasica sesion del trono.',
@@ -754,7 +754,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-esmeralda-trono',
-    name: '15 Anos - Vestido Esmeralda de Trono',
+    name: '15 Años - Vestido Esmeralda de Trono',
     category: '15-anos',
     subCategory: 'Princesa',
     description: 'Vestido de 15 años en lentejuelas verde esmeralda con cola dramatica desmontable, ideal para una tematica de cuento de hadas.',
@@ -771,7 +771,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-coral-auto-vintage',
-    name: '15 Anos - Vestido Coral junto al Auto Vintage',
+    name: '15 Años - Vestido Coral junto al Auto Vintage',
     category: '15-anos',
     subCategory: 'Princesa',
     description: 'Vestido de 15 años en tul color coral, de falda amplia y vaporosa, fotografiado junto a un auto vintage para el book de la quinceañera.',
@@ -788,7 +788,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-plata-glitter',
-    name: '15 Anos - Vestido Plata Glitter',
+    name: '15 Años - Vestido Plata Glitter',
     category: '15-anos',
     subCategory: 'Moderno',
     description: 'Vestido de 15 años en tela glitter plateada con falda voluminosa, fotografiado en la sesion del trono.',
@@ -804,7 +804,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-bosque-ciudad',
-    name: '15 Anos - Coleccion Bosque y Ciudad',
+    name: '15 Años - Coleccion Bosque y Ciudad',
     category: '15-anos',
     subCategory: 'Moderno',
     description: 'Coleccion de books reales de 15 años en escenarios naturales y urbanos: hombros descubiertos en azul, rosa viejo en escalera y brillo plateado en el parque.',
@@ -823,7 +823,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-blanco-plata-volados',
-    name: '15 Anos - Vestido Blanco y Plata con Volados',
+    name: '15 Años - Vestido Blanco y Plata con Volados',
     category: '15-anos',
     subCategory: 'Princesa',
     description: 'Vestido de 15 años blanco con brillo plateado sutil y volados en capas, probado en nuestro local y fotografiado en festejo real.',
@@ -840,7 +840,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '15-real-momentos-festejo',
-    name: '15 Anos - Momentos de Festejo',
+    name: '15 Años - Momentos de Festejo',
     category: '15-anos',
     subCategory: 'Fiesta',
     description: 'Coleccion de momentos reales de festejos de 15 años: corte de torta, photobooth, hermanas, pruebas en nuestro local y sesiones con tiara y ramo en distintos colores.',

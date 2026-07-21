@@ -67,7 +67,7 @@ export function HomeServices() {
         {/* Info strip */}
         <div className="mt-14 grid sm:grid-cols-3 gap-0 border border-border divide-y sm:divide-y-0 sm:divide-x divide-border">
           {[
-            { value: "30+", label: "Anos de trayectoria" },
+            { value: "30+", label: "Años de trayectoria" },
             { value: "5.000+", label: "Clientas vestidas" },
             { value: "100%", label: "Atencion personalizada" },
           ].map((stat) => (

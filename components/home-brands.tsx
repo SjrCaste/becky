@@ -4,7 +4,7 @@ const features = [
   "Pago en cuotas sin interes",
   "Atencion personalizada",
   "Stock permanente",
-  "30 anos de experiencia",
+  "30 años de experiencia",
 ]
 
 export function HomeBrands() {

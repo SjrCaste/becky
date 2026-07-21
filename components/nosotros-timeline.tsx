@@ -9,7 +9,7 @@ const milestones = [
     year: "2000",
     title: "Expansion de colecciones",
     description:
-      "Incorporamos la linea de vestidos de 15 anos y accesorios, convirtiéndonos en referentes del barrio para celebraciones especiales.",
+      "Incorporamos la linea de vestidos de 15 años y accesorios, convirtiéndonos en referentes del barrio para celebraciones especiales.",
   },
   {
     year: "2010",
