@@ -610,6 +610,437 @@ export const PRODUCTS: Product[] = [
     ],
     features: ['Corte alto para movilidad', 'Satén fluido', 'Escote corazón', 'Falda drapeada asimétrica'],
     tags: ['Novia', 'Moderno', 'Boda', 'Sofisticado']
+  },
+  // Fotos reales de clientas - carpeta images 3 - Julio 2026
+  {
+    id: 'novia-real-marquesina',
+    name: 'Boda Real - Encaje y Recepcion Nocturna',
+    category: 'novias',
+    subCategory: 'Ceremonia',
+    description: 'Boda real fotografiada durante una recepcion nocturna. Vestido de novia con mangas de encaje bordado y cola tipo capilla, capturado en la entrada iluminada, el primer baile con bengalas y el corte de torta.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Marfil'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Clasico', 'Romantico', 'Manga Larga'],
+    images: [
+      '/images/images-3/novia-real-marquesina-1.jpg',
+      '/images/images-3/novia-real-marquesina-2.jpg',
+      '/images/images-3/novia-real-marquesina-3.jpg',
+      '/images/images-3/novia-real-marquesina-4.jpg',
+      '/images/images-3/novia-real-marquesina-5.jpg',
+      '/images/images-3/novia-real-marquesina-6.jpg',
+      '/images/images-3/novia-real-marquesina-7.jpg',
+      '/images/images-3/novia-real-marquesina-8.jpg',
+      '/images/images-3/novia-real-marquesina-9.jpg',
+      '/images/images-3/novia-real-marquesina-10.jpg',
+      '/images/images-3/novia-real-marquesina-11.jpg',
+      '/images/images-3/novia-real-marquesina-12.jpg',
+      '/images/images-3/novia-real-marquesina-13.jpg'
+    ],
+    features: ['Encaje bordado en mangas largas', 'Cola tipo capilla', 'Corpiño ajustado con transparencias', 'Fotografiado en boda real nocturna'],
+    tags: ['Novia', 'Boda Real', 'Encaje', 'Manga Larga'],
+    isFeatured: true
+  },
+  {
+    id: 'novia-real-honor-militar',
+    name: 'Boda Real - Honores Militares',
+    category: 'novias',
+    subCategory: 'Ceremonia',
+    description: 'Boda real con ingreso acompañada por su padre en uniforme de gala y salida bajo un arco de sables de honor. Vestido de novia clasico en tul y encaje con cola larga tipo catedral.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Clasico', 'Ceremonial'],
+    images: [
+      '/images/images-3/novia-real-honor-militar-1.jpg',
+      '/images/images-3/novia-real-honor-militar-2.jpg',
+      '/images/images-3/novia-real-honor-militar-3.jpg'
+    ],
+    features: ['Cola larga tipo catedral', 'Ingreso acompañada por su padre', 'Salida bajo arco de sables', 'Diseño clasico en tul y encaje'],
+    tags: ['Novia', 'Boda Real', 'Ceremonia', 'Clasico']
+  },
+  {
+    id: 'novia-real-saten-manga-larga',
+    name: 'Boda Real - Saten Clasico Manga Larga',
+    category: 'novias',
+    subCategory: 'Minimalista',
+    description: 'Vestido de novia en saten liso de caida fluida, con mangas largas ajustadas y cierre trasero con lazo. Un diseño minimalista y elegante fotografiado en boda real.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Marfil'],
+    sizes: ['XS', 'S', 'M', 'L', 'A medida'],
+    styles: ['Minimalista', 'Clasico'],
+    images: [
+      '/images/images-3/novia-real-saten-manga-larga-1.jpg',
+      '/images/images-3/novia-real-saten-manga-larga-2.jpg',
+      '/images/images-3/novia-real-saten-manga-larga-3.jpg'
+    ],
+    features: ['Saten liso de caida fluida', 'Mangas largas ajustadas', 'Cierre trasero con lazo', 'Escote sutil'],
+    tags: ['Novia', 'Saten', 'Minimalista', 'Manga Larga']
+  },
+  {
+    id: 'novia-real-momentos-ceremonia',
+    name: 'Bodas Reales - Momentos de Ceremonia',
+    category: 'novias',
+    subCategory: 'Ceremonia',
+    description: 'Coleccion de momentos reales de ceremonia: bodas al aire libre, cortejo de damas y ramos naturales. Diseños clasicos en blanco fotografiados en distintas celebraciones reales.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['S', 'M', 'L', 'XL', 'A medida'],
+    styles: ['Clasico', 'Romantico'],
+    images: [
+      '/images/images-3/novia-real-momentos-ceremonia-1.jpg',
+      '/images/images-3/novia-real-momentos-ceremonia-2.jpg',
+      '/images/images-3/novia-real-momentos-ceremonia-3.jpg',
+      '/images/images-3/novia-real-momentos-ceremonia-4.jpg'
+    ],
+    features: ['Ceremonias al aire libre', 'Cortejo y damas de honor', 'Ramos naturales', 'Diseños clasicos en blanco'],
+    tags: ['Novia', 'Boda Real', 'Ceremonia', 'Jardin']
+  },
+  {
+    id: 'novia-real-momentos-fiesta',
+    name: 'Bodas Reales - Momentos de Fiesta y Baile',
+    category: 'novias',
+    subCategory: 'Recepcion',
+    description: 'Momentos reales de recepcion y fiesta: primeros bailes, vals y celebraciones al aire libre. Faldas voluminosas de tul en distintas bodas reales.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Clasico', 'Romantico'],
+    images: [
+      '/images/images-3/novia-real-momentos-fiesta-1.jpg',
+      '/images/images-3/novia-real-momentos-fiesta-2.jpg',
+      '/images/images-3/novia-real-momentos-fiesta-3.jpg',
+      '/images/images-3/novia-real-momentos-fiesta-4.jpg',
+      '/images/images-3/novia-real-momentos-fiesta-5.jpg',
+      '/images/images-3/novia-real-momentos-fiesta-6.jpg'
+    ],
+    features: ['Vals y primer baile', 'Recepciones al aire libre', 'Faldas voluminosas de tul', 'Momentos espontaneos reales'],
+    tags: ['Novia', 'Boda Real', 'Fiesta', 'Baile']
+  },
+  {
+    id: '15-real-look-blanco-fiesta',
+    name: '15 Anos - Look Blanco de Fiesta',
+    category: '15-anos',
+    subCategory: 'Moderno',
+    description: 'Look de fiesta en blanco de corte sencillo, con capa de plumas para la entrada y baile en pista. Fotografiado en festejo real de 15 años.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['XS', 'S', 'M', 'A medida'],
+    styles: ['Moderno', 'Juvenil'],
+    images: [
+      '/images/images-3/15-real-look-blanco-fiesta-1.jpg',
+      '/images/images-3/15-real-look-blanco-fiesta-2.jpg',
+      '/images/images-3/15-real-look-blanco-fiesta-3.jpg',
+      '/images/images-3/15-real-look-blanco-fiesta-4.jpg'
+    ],
+    features: ['Vestido blanco de corte sencillo', 'Capa de plumas para la entrada', 'Ideal para fiesta y baile', 'Fotografiado en evento real'],
+    tags: ['15 Años', 'Blanco', 'Fiesta', 'Moderno']
+  },
+  {
+    id: '15-real-dorado-trono',
+    name: '15 Anos - Vestido Dorado de Trono',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en tul dorado brillante con corpiño bordado y falda amplia tipo princesa, fotografiado en la clasica sesion del trono.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Dorado'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Brillante'],
+    images: [
+      '/images/images-3/15-real-dorado-trono-1.jpg'
+    ],
+    features: ['Tul dorado brillante', 'Corpiño bordado', 'Falda amplia tipo princesa', 'Sesion de fotos en trono'],
+    tags: ['15 Años', 'Dorado', 'Princesa', 'Brillante']
+  },
+  {
+    id: '15-real-esmeralda-trono',
+    name: '15 Anos - Vestido Esmeralda de Trono',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en lentejuelas verde esmeralda con cola dramatica desmontable, ideal para una tematica de cuento de hadas.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Verde Esmeralda'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Dramatico'],
+    images: [
+      '/images/images-3/15-real-esmeralda-trono-1.jpg'
+    ],
+    features: ['Lentejuelas verde esmeralda', 'Cola dramatica desmontable', 'Corte de princesa', 'Diseño con tematica de cuento'],
+    tags: ['15 Años', 'Esmeralda', 'Princesa', 'Lentejuelas'],
+    isFeatured: true
+  },
+  {
+    id: '15-real-coral-auto-vintage',
+    name: '15 Anos - Vestido Coral junto al Auto Vintage',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años en tul color coral, de falda amplia y vaporosa, fotografiado junto a un auto vintage para el book de la quinceañera.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Coral'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Romantico'],
+    images: [
+      '/images/images-3/15-real-coral-auto-vintage-1.jpg',
+      '/images/images-3/15-real-coral-auto-vintage-2.jpg'
+    ],
+    features: ['Tul color coral', 'Falda amplia y vaporosa', 'Ideal para book de fotos', 'Diseño romantico'],
+    tags: ['15 Años', 'Coral', 'Princesa', 'Romantico']
+  },
+  {
+    id: '15-real-plata-glitter',
+    name: '15 Anos - Vestido Plata Glitter',
+    category: '15-anos',
+    subCategory: 'Moderno',
+    description: 'Vestido de 15 años en tela glitter plateada con falda voluminosa, fotografiado en la sesion del trono.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Plateado'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Brillante', 'Moderno'],
+    images: [
+      '/images/images-3/15-real-plata-glitter-1.jpg'
+    ],
+    features: ['Tela glitter plateada', 'Falda voluminosa', 'Corte moderno', 'Brillo de fantasia'],
+    tags: ['15 Años', 'Plateado', 'Glitter', 'Moderno']
+  },
+  {
+    id: '15-real-bosque-ciudad',
+    name: '15 Anos - Coleccion Bosque y Ciudad',
+    category: '15-anos',
+    subCategory: 'Moderno',
+    description: 'Coleccion de books reales de 15 años en escenarios naturales y urbanos: hombros descubiertos en azul, rosa viejo en escalera y brillo plateado en el parque.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul', 'Rosa Viejo', 'Plateado'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Moderno', 'Romantico'],
+    images: [
+      '/images/images-3/15-real-bosque-ciudad-1.jpg',
+      '/images/images-3/15-real-bosque-ciudad-2.jpg',
+      '/images/images-3/15-real-bosque-ciudad-3.jpg',
+      '/images/images-3/15-real-bosque-ciudad-4.jpg'
+    ],
+    features: ['Sesiones en exteriores naturales', 'Variedad de colores y texturas', 'Diseños con hombros descubiertos', 'Books fotograficos reales'],
+    tags: ['15 Años', 'Book de Fotos', 'Exterior', 'Colores']
+  },
+  {
+    id: '15-real-blanco-plata-volados',
+    name: '15 Anos - Vestido Blanco y Plata con Volados',
+    category: '15-anos',
+    subCategory: 'Princesa',
+    description: 'Vestido de 15 años blanco con brillo plateado sutil y volados en capas, probado en nuestro local y fotografiado en festejo real.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto', 'Plateado'],
+    sizes: ['S', 'M', 'A medida'],
+    styles: ['Princesa', 'Brillante'],
+    images: [
+      '/images/images-3/15-real-blanco-plata-volados-1.jpg',
+      '/images/images-3/15-real-blanco-plata-volados-2.jpg'
+    ],
+    features: ['Volados en capas', 'Brillo plateado sutil', 'Falda amplia tipo princesa', 'Probado en nuestro local'],
+    tags: ['15 Años', 'Blanco', 'Plateado', 'Volados']
+  },
+  {
+    id: '15-real-momentos-festejo',
+    name: '15 Anos - Momentos de Festejo',
+    category: '15-anos',
+    subCategory: 'Fiesta',
+    description: 'Coleccion de momentos reales de festejos de 15 años: corte de torta, photobooth, hermanas, pruebas en nuestro local y sesiones con tiara y ramo en distintos colores.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa', 'Blanco', 'Champagne', 'Azul Marino'],
+    sizes: ['XS', 'S', 'M', 'L', 'A medida'],
+    styles: ['Fiesta', 'Romantico'],
+    images: [
+      '/images/images-3/15-real-momentos-festejo-1.jpg',
+      '/images/images-3/15-real-momentos-festejo-2.jpg',
+      '/images/images-3/15-real-momentos-festejo-3.jpg',
+      '/images/images-3/15-real-momentos-festejo-4.jpg',
+      '/images/images-3/15-real-momentos-festejo-5.jpg',
+      '/images/images-3/15-real-momentos-festejo-6.jpg',
+      '/images/images-3/15-real-momentos-festejo-7.jpg',
+      '/images/images-3/15-real-momentos-festejo-8.jpg',
+      '/images/images-3/15-real-momentos-festejo-9.jpg',
+      '/images/images-3/15-real-momentos-festejo-10.jpg',
+      '/images/images-3/15-real-momentos-festejo-11.jpg',
+      '/images/images-3/15-real-momentos-festejo-12.jpg',
+      '/images/images-3/15-real-momentos-festejo-13.jpg',
+      '/images/images-3/15-real-momentos-festejo-14.jpg',
+      '/images/images-3/15-real-momentos-festejo-15.jpg',
+      '/images/images-3/15-real-momentos-festejo-16.jpg',
+      '/images/images-3/15-real-momentos-festejo-17.jpg'
+    ],
+    features: ['Momentos reales de festejo', 'Variedad de colores y estilos', 'Pruebas en nuestro local', 'Books y sesiones fotograficas'],
+    tags: ['15 Años', 'Festejo', 'Book de Fotos', 'Coleccion']
+  },
+  {
+    id: 'fiesta-real-blanco-sencillo',
+    name: 'Vestido Blanco Sencillo - Book y Percha',
+    category: 'fiesta',
+    subCategory: 'Vestidos Cortos',
+    description: 'Vestido de fiesta blanco de corte sencillo y entallado, ideal para eventos de dia. Fotografiado en book urbano y disponible para probar en nuestro local.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Blanco Roto'],
+    sizes: ['XS', 'S', 'M', 'L', 'A medida'],
+    styles: ['Minimalista', 'Moderno'],
+    images: [
+      '/images/images-3/fiesta-real-blanco-sencillo-1.jpg',
+      '/images/images-3/fiesta-real-blanco-sencillo-2.jpg',
+      '/images/images-3/fiesta-real-blanco-sencillo-3.jpg',
+      '/images/images-3/fiesta-real-blanco-sencillo-4.jpg',
+      '/images/images-3/fiesta-real-blanco-sencillo-5.jpg',
+      '/images/images-3/fiesta-real-blanco-sencillo-6.jpg'
+    ],
+    features: ['Corte sencillo y entallado', 'Ideal para eventos de dia', 'Tela liviana y fresca', 'Disponible en nuestro local'],
+    tags: ['Fiesta', 'Blanco', 'Sencillo', 'Book Urbano']
+  },
+  {
+    id: 'fiesta-real-gala-azul',
+    name: 'Fiesta - Gala en Azul',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestidos de fiesta en tonos azules: diseño largo con brillo para pista de baile y opcion corta en tul, ambos fotografiados en eventos reales.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Brillante'],
+    images: [
+      '/images/images-3/fiesta-real-gala-azul-1.jpg',
+      '/images/images-3/fiesta-real-gala-azul-2.jpg'
+    ],
+    features: ['Tul azul vibrante', 'Diseños largo y corto', 'Ideal para gala y fiesta', 'Brillo de fantasia'],
+    tags: ['Fiesta', 'Azul', 'Gala', 'Tul']
+  },
+  {
+    id: 'fiesta-real-bordo-vino',
+    name: 'Fiesta - Gala Bordo y Vino',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestidos de fiesta en lentejuelas bordó y vino, con detalles bordados a mano y corte sirena, fotografiados en pista de baile y sesiones de gala.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Bordó'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Brillante'],
+    images: [
+      '/images/images-3/fiesta-real-bordo-vino-1.jpg',
+      '/images/images-3/fiesta-real-bordo-vino-2.jpg',
+      '/images/images-3/fiesta-real-bordo-vino-3.jpg',
+      '/images/images-3/fiesta-real-bordo-vino-4.jpg',
+      '/images/images-3/fiesta-real-bordo-vino-5.jpg'
+    ],
+    features: ['Lentejuelas bordó', 'Corte sirena', 'Detalles bordados a mano', 'Ideal para gala nocturna'],
+    tags: ['Fiesta', 'Bordó', 'Gala', 'Lentejuelas']
+  },
+  {
+    id: 'fiesta-real-elegancia-negro',
+    name: 'Fiesta - Elegancia en Negro',
+    category: 'fiesta',
+    subCategory: 'Vestidos Cortos',
+    description: 'Vestidos de fiesta en negro elegante, en versiones cortas y largas, ideales para gala nocturna y eventos formales.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Negro'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Gala'],
+    images: [
+      '/images/images-3/fiesta-real-elegancia-negro-1.jpg',
+      '/images/images-3/fiesta-real-elegancia-negro-2.jpg',
+      '/images/images-3/fiesta-real-elegancia-negro-3.jpg',
+      '/images/images-3/fiesta-real-elegancia-negro-4.jpg'
+    ],
+    features: ['Diseños en negro elegante', 'Opciones cortas y largas', 'Ideal para fiesta de gala', 'Terminaciones de lujo'],
+    tags: ['Fiesta', 'Negro', 'Elegante', 'Gala']
+  },
+  {
+    id: 'fiesta-real-coral-naranja',
+    name: 'Fiesta - Tonos Coral y Naranja',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestidos de fiesta en tonos coral y naranja con lentejuelas y cola desmontable, ideales para una entrada de impacto en eventos de gala.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Coral', 'Naranja'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Brillante'],
+    images: [
+      '/images/images-3/fiesta-real-coral-naranja-1.jpg',
+      '/images/images-3/fiesta-real-coral-naranja-2.jpg',
+      '/images/images-3/fiesta-real-coral-naranja-3.jpg',
+      '/images/images-3/fiesta-real-coral-naranja-4.jpg',
+      '/images/images-3/fiesta-real-coral-naranja-5.jpg'
+    ],
+    features: ['Lentejuelas en tonos coral y naranja', 'Cola desmontable', 'Corte strapless', 'Ideal para eventos de noche'],
+    tags: ['Fiesta', 'Coral', 'Naranja', 'Gala']
+  },
+  {
+    id: 'fiesta-real-dorado-esmeralda-celeste',
+    name: 'Fiesta - Dorado, Esmeralda y Celeste',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Coleccion de vestidos de gala en dorado, esmeralda y celeste, con corpiños de pedreria. Ideales para fiestas de 15 años y eventos de gala.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Dorado', 'Esmeralda', 'Celeste'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Brillante'],
+    images: [
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-1.jpg',
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-2.jpg',
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-3.jpg',
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-4.jpg',
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-5.jpg',
+      '/images/images-3/fiesta-real-dorado-esmeralda-celeste-6.jpg'
+    ],
+    features: ['Variedad de colores brillantes', 'Corpiños con pedreria', 'Diseños de gala exclusivos', 'Ideal para fiesta y 15 años'],
+    tags: ['Fiesta', 'Gala', 'Brillante', 'Pedreria']
+  },
+  {
+    id: 'fiesta-real-rosa-duos',
+    name: 'Fiesta - Rosa y Duos Elegantes',
+    category: 'fiesta',
+    subCategory: 'Gala / Largo',
+    description: 'Vestidos de fiesta en tonos rosas y combinaciones en pareja, ideales para acompañantes y damas. Variedad de largos, aberturas y terminaciones en pedreria y encaje.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Rosa', 'Blanco', 'Bordó', 'Azul Marino'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Gala', 'Elegante'],
+    images: [
+      '/images/images-3/fiesta-real-rosa-duos-1.jpg',
+      '/images/images-3/fiesta-real-rosa-duos-2.jpg',
+      '/images/images-3/fiesta-real-rosa-duos-3.jpg',
+      '/images/images-3/fiesta-real-rosa-duos-4.jpg',
+      '/images/images-3/fiesta-real-rosa-duos-5.jpg',
+      '/images/images-3/fiesta-real-rosa-duos-6.jpg'
+    ],
+    features: ['Ideal para acompañantes y damas', 'Diseños coordinados en pares', 'Variedad de largos y colores', 'Terminaciones en pedreria y encaje'],
+    tags: ['Fiesta', 'Rosa', 'Duo', 'Gala']
+  },
+  {
+    id: 'padrino-real-conjunto-celeste',
+    name: 'Padrinos y Madrinas - Conjunto Celeste',
+    category: 'padrinos-y-madrinas',
+    subCategory: 'Madrinas',
+    description: 'Conjuntos coordinados en tonos celestes para madrinas y acompañantes, ideales para combinar con trajes masculinos en el cortejo.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Celeste'],
+    sizes: ['S', 'M', 'L', 'XL', 'A medida'],
+    styles: ['Elegante', 'Cortejo'],
+    images: [
+      '/images/images-3/padrino-real-conjunto-celeste-1.jpg',
+      '/images/images-3/padrino-real-conjunto-celeste-2.jpg'
+    ],
+    features: ['Conjuntos coordinados para el cortejo', 'Ideal para madrinas y acompañantes', 'Diseño elegante en tonos celestes', 'Combina con trajes masculinos'],
+    tags: ['Madrina', 'Celeste', 'Cortejo', 'Elegante']
+  },
+  {
+    id: 'padrino-real-grupo-fiesta',
+    name: 'Padrinos y Madrinas - Grupo de Fiesta',
+    category: 'padrinos-y-madrinas',
+    subCategory: 'Cortejo',
+    description: 'Combinacion de trajes y vestidos coordinados para cortejos numerosos, en tonos azul marino y rosa, ideal para fiestas y celebraciones.',
+    priceEstimate: 'Consultar Presupuesto',
+    colors: ['Azul Marino', 'Rosa'],
+    sizes: ['S', 'M', 'L', 'A medida'],
+    styles: ['Elegante', 'Cortejo'],
+    images: [
+      '/images/images-3/padrino-real-grupo-fiesta-1.jpg'
+    ],
+    features: ['Combinacion de trajes y vestidos', 'Ideal para cortejos numerosos', 'Colores coordinados entre parejas', 'Diseño para fiestas y celebraciones'],
+    tags: ['Padrinos', 'Cortejo', 'Fiesta', 'Grupo']
   }
 ];
 
