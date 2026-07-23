@@ -56,7 +56,7 @@ const categories = [
     slug: "etiqueta-masculina",
     title: "Etiqueta Masculina",
     tagline: "Alquiler de Trajes",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+    image: "/images/IMAGES2/detalle-costuras-novia.jpg",
     subcategories: ["Novios", "Padrinos", "Eventos Formales"],
     description: "Alquiler de trajes y prendas de etiqueta para novios, padrinos y eventos formales."
   },
@@ -64,7 +64,7 @@ const categories = [
     slug: "telas-y-sederia",
     title: "Telas y Sedería",
     tagline: "Importadas de Lujo",
-    image: "https://images.unsplash.com/photo-1771098206650-81d713e2e2b9?auto=format&fit=crop&w=800&q=80",
+    image: "/images/IMAGES2/detalle-encaje-novia.jpg",
     subcategories: ["Encajes", "Tul y Satén", "Brillos y Piedras"],
     description: "Gran variedad de encajes, tul, satén, brillos, piedras y telas importadas disponibles para confección."
   },
@@ -72,7 +72,7 @@ const categories = [
     slug: "accesorios",
     title: "Accesorios",
     tagline: "Complementos Selectos",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+    image: "/images/IMAGES2/novia-azulado-piedras.jpg",
     subcategories: ["Tocados", "Joyería", "Complementos"],
     description: "Complementos seleccionados para completar cada look y acompañar cada ocasión especial."
   }
@@ -97,7 +97,7 @@ export function CollectionCategories() {
 
         {/* Categories Grid */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {categories.map((cat) => (
+          {categories.map((cat, index) => (
             <Link 
               key={cat.slug}
               href={FILTERABLE_SLUGS.includes(cat.slug) ? `/catalogo?categoria=${cat.slug}` : "/catalogo"}
@@ -111,7 +111,7 @@ export function CollectionCategories() {
                   fill
                   className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
+                  priority={index < 2}
                 />
                 {/* Elegant gradients: dark bottom overlay, subtle top glow */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20 group-hover:via-black/50 transition-all duration-700" />
@@ -135,12 +135,12 @@ export function CollectionCategories() {
                 </h3>
                 
                 {/* Expandable sub-categories and description */}
-                <p className="text-xs md:text-sm text-primary-foreground/75 font-light leading-relaxed max-w-md opacity-90 group-hover:opacity-100 mb-4 transition-opacity duration-500">
+                <p className="text-xs md:text-sm text-primary-foreground/75 font-light leading-relaxed max-w-md opacity-100 md:opacity-90 md:group-hover:opacity-100 mb-4 transition-opacity duration-500">
                   {cat.description}
                 </p>
 
                 {/* Subcategories badge row */}
-                <div className="flex flex-wrap gap-2 pt-2 border-t border-primary-foreground/15 mt-2 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-primary-foreground/15 mt-2 opacity-100 md:opacity-80 md:group-hover:opacity-100 transition-opacity duration-500">
                   {cat.subcategories.map((sub, i) => (
                     <span 
                       key={i} 

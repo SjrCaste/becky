@@ -73,7 +73,7 @@ export function FabricsSection() {
                 )}
 
                 {/* Micro zoom interaction hint */}
-                <div className="absolute bottom-4 right-4 bg-foreground/75 backdrop-blur-sm text-primary-foreground text-[9px] tracking-wider uppercase px-2.5 py-1 z-20 flex items-center gap-1.5 pointer-events-none group-hover:bg-accent group-hover:text-foreground transition-all duration-300">
+                <div className="hidden md:flex absolute bottom-4 right-4 bg-foreground/75 backdrop-blur-sm text-primary-foreground text-[9px] tracking-wider uppercase px-2.5 py-1 z-20 items-center gap-1.5 pointer-events-none group-hover:bg-accent group-hover:text-foreground transition-all duration-300">
                   <SearchCode className="w-3.5 h-3.5" />
                   <span>Zoom Macro</span>
                 </div>

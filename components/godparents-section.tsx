@@ -7,21 +7,21 @@ const members = [
   {
     role: "Madrinas",
     tag: "Sophisticated Elegance",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
+    image: "/images/coleccion-real/madrina-marfil-sirena-1.jpg",
     description: "Vestidos sofisticados con sobre-sacos de encajes importados, seda salvaje y drapeados hechos para estilizar y deslumbrar con distinción.",
     link: "/catalogo?categoria=padrinos-y-madrinas&sub=madrinas"
   },
   {
     role: "Padrinos",
     tag: "Italian Tailoring",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+    image: "/images/IMAGES2/detalle-costuras-novia.jpg",
     description: "Trajes de etiqueta impecables, trajes de tres piezas y chaqués a medida. Sastrería premium en lana fría y cortes modernos.",
     link: "/catalogo?categoria=padrinos-y-madrinas&sub=padrinos"
   },
   {
     role: "Cortejos y Familia",
     tag: "Ceremonial Coordination",
-    image: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80",
+    image: "/images/IMAGES2/fiesta-amarillo-elegante.jpg",
     description: "Vestidos infantiles y looks juveniles para el cortejo nupcial. Diseños coordinados con la estética general de la ceremonia.",
     link: "/catalogo?categoria=padrinos-y-madrinas&sub=cortejos"
   }

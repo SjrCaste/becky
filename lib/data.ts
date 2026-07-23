@@ -79,8 +79,8 @@ export const PRODUCTS: Product[] = [
     sizes: ['S', 'M', 'L', 'A medida'],
     styles: ['Clásico', 'Alta Costura', 'Princesa'],
     images: [
-      'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1591551970139-29b552dd8539?auto=format&fit=crop&w=800&q=80'
+      '/images/IMAGES2/novia-interior-elegante.jpg',
+      '/images/IMAGES2/boda-novia-iglesia-1.jpg'
     ],
     features: ['Encaje de Chantilly Francés', 'Bordado a mano de cristales', 'Corte corsetería artesanal', 'Cola desmontable de 2 metros'],
     tags: ['Novia', 'Couture', 'Encaje', 'Boda'],
@@ -97,7 +97,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['XS', 'S', 'M', 'L', 'A medida'],
     styles: ['Minimalista', 'Moderno', 'Sirena'],
     images: [
-      'https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&w=800&q=80'
+      '/images/IMAGES2/boda-novia-corte-alto.jpg'
     ],
     features: ['Satén de seda italiano', 'Corte sirena estructurado', 'Drapeado hecho a mano', 'Escote barco minimalista'],
     tags: ['Novia', 'Satén', 'Minimalista', 'Sirena']
@@ -115,7 +115,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['S', 'M', 'A medida'],
     styles: ['Princesa', 'Brillante', 'Exclusivo'],
     images: [
-      'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80'
+      '/images/coleccion-real/azul-glitter-marty-1.jpg'
     ],
     features: ['Corset estructurado de alta costura', 'Bordado con cristales genuinos', 'Falda de tul glitter francés', 'Ajuste regulable en espalda'],
     tags: ['15 Años', 'Princesa', 'Glitter', 'Bordado'],
@@ -132,7 +132,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['XS', 'S', 'M', 'A medida'],
     styles: ['Moderno', 'Exclusivo'],
     images: [
-      'https://images.unsplash.com/photo-1518049368264-ee3cbd155f30?auto=format&fit=crop&w=800&q=80'
+      '/images/coleccion-real/rosa-palo-jardin-1.jpg'
     ],
     features: ['Flores 3D hechas a mano', 'Organza importada', 'Detalle de perlas en el bustier', 'Falda ligera y cómoda'],
     tags: ['15 Años', 'Moderno', 'Flores 3D', 'Tul']
@@ -150,7 +150,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['S', 'M', 'L', 'XL', 'A medida'],
     styles: ['Gala', 'Largo', 'Elegante'],
     images: [
-      'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80'
+      '/images/IMAGES2/fiesta-amarillo-elegante.jpg'
     ],
     features: ['Crepe de seda doble', 'Corte asimétrico de autor', 'Aplique de pedrería artesanal', 'Caída fluida con forro de seda'],
     tags: ['Fiesta', 'Gala', 'Largo', 'Crepe'],
@@ -169,7 +169,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['XS', 'S', 'M', 'A medida'],
     styles: ['Ceremonial', 'Elegante', 'Juvenil'],
     images: [
-      'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80'
+      '/images/IMAGES2/bat-mitzvah-rosa-2.jpg'
     ],
     features: ['Encaje guipur importado', 'Falda de línea A fluida', 'Detalles en dorado sutil', 'Diseño ceremonial protocolar'],
     tags: ['Bat Mitzvá', 'Ceremonia', 'Juvenil', 'Guipur']
@@ -185,7 +185,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['XS', 'S', 'M', 'A medida'],
     styles: ['Ceremonial', 'Traje', 'Clásico Modernizado'],
     images: [
-      'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80'
+      '/images/IMAGES2/detalle-costuras-novia.jpg'
     ],
     features: ['Lana fría italiana super 120', 'Corte sastre a medida', 'Detalles en raso de seda', 'Chaleco combinando incluido'],
     tags: ['Bar Mitzvá', 'Sastrería', 'Elegante', 'Traje']
@@ -203,7 +203,7 @@ export const PRODUCTS: Product[] = [
     sizes: ['M', 'L', 'XL', 'XXL', 'A medida'],
     styles: ['Sofisticado', 'Lujo', 'Cortejo'],
     images: [
-      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80'
+      '/images/coleccion-real/madrina-marfil-sirena-1.jpg'
     ],
     features: ['Seda salvaje de alta densidad', 'Sobre-saco de encaje Richelieu', 'Bordados artesanales dorados', 'Mangas 3/4 refinadas'],
     tags: ['Madrina', 'Seda Salvaje', 'Richelieu', 'Ceremonia']
@@ -1051,7 +1051,7 @@ export const FABRICS: Fabric[] = [
     description: 'El tejido más romántico y delicado de la alta costura. De origen francés, destaca por sus finos motivos florales delineados por un hilo plano de seda. Su transparencia y ligereza lo hacen el favorito para velos y corpiños de novias.',
     type: 'Encaje',
     origin: 'Francia',
-    image: 'https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=800&q=80',
+    image: '/images/IMAGES2/detalle-encaje-novia.jpg',
     details: ['100% Seda de hilado fino', 'Transparencia de lujo', 'Ancho de 1.40m', 'Detalles florales tradicionales']
   },
   {
@@ -1060,7 +1060,7 @@ export const FABRICS: Fabric[] = [
     description: 'Un satén de seda pesado con un brillo sutil, refinado y elegante. Con gran cuerpo y excelente estructura, es la opción ideal para vestidos de novias y faldas princesa estructuradas que requieren volumen con una caída majestuosa.',
     type: 'Satén',
     origin: 'Italia',
-    image: 'https://images.unsplash.com/photo-1584290860588-4f8150a6b107?auto=format&fit=crop&w=800&q=80',
+    image: '/images/IMAGES2/detalle-costuras-novia.jpg',
     details: ['Seda natural con acabado lustre', 'Alto gramaje y consistencia', 'Caída arquitectónica ideal para corsetería', 'Ancho de 1.50m']
   },
   {
@@ -1069,7 +1069,7 @@ export const FABRICS: Fabric[] = [
     description: 'Tejido translúcido, ligero pero con una rigidez natural que aporta un volumen etéreo. Su textura sedosa y tacto delicado la convierten en el material idóneo para detalles tridimensionales, volados y mangas de ensueño.',
     type: 'Organza',
     origin: 'Suiza',
-    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80',
+    image: '/images/IMAGES2/boda-novia-encaje-1.jpg',
     details: ['Organza premium traslúcida', 'Tacto crujiente sofisticado', 'Ideal para drapeados y volumen etéreo', 'Ancho de 1.45m']
   },
   {
@@ -1078,7 +1078,7 @@ export const FABRICS: Fabric[] = [
     description: 'Un lienzo de tul transparente italiano bordado meticulosamente a mano con cristales de roca, perlas cultivadas y canutillos de vidrio importados. Diseñado para brillar bajo las luces ceremoniales con elegancia editorial.',
     type: 'Pedrería / Tul',
     origin: 'India / Italia',
-    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80',
+    image: '/images/IMAGES2/novia-azulado-piedras.jpg',
     details: ['Bordado artesanal a mano', 'Cristales de roca facetados y perlas', 'Peso pesado con caída espectacular', 'Ancho de 1.30m']
   }
 ];
@@ -1088,25 +1088,25 @@ export const TIMELINE: TimelineEvent[] = [
     year: '1942',
     title: 'Fundación del Atelier',
     description: 'José Abad funda nuestra sedería de vestidos en Buenos Aires, orientada desde sus inicios a bodas y fiestas. El comienzo de una historia familiar que es, hasta hoy, la vida de los Abad.',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'
+    image: '/images/IMAGES2/boda-novia-iglesia-1.jpg'
   },
   {
     year: '1963',
     title: 'Eduardo Abad se incorpora a la familia',
     description: 'Eduardo Abad, familiar de nuestro fundador, se suma al negocio familiar, dando continuidad a la tradición de la sedería de bodas y fiestas.',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/IMAGES2/detalle-costuras-novia.jpg'
   },
   {
     year: '1983',
     title: 'Eduardo Abad al frente del local',
     description: 'Eduardo Abad asume la atención del local, donde continúa hasta el día de hoy: ya son 43 años atendiendo a cada cliente con dedicación familiar.',
-    image: 'https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=800&q=80'
+    image: '/images/IMAGES2/novia-interior-elegante.jpg'
   },
   {
     year: '2026',
     title: '84 Años de Tradición y Futuro',
     description: 'Celebramos 84 años de historia vistiendo bodas y fiestas. Confección tradicional hecha a mano que abraza las siluetas modernas, manteniendo viva la promesa de exclusividad, lujo e identidad familiar.',
-    image: 'https://images.unsplash.com/photo-1591551970139-29b552dd8539?auto=format&fit=crop&w=800&q=80'
+    image: '/images/IMAGES2/boda-novia-iglesia-1.jpg'
   }
 ];
 
@@ -1116,7 +1116,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Carolina Goldstein',
     role: 'Novia Sedería Becky',
     quote: 'Gracias Becky por hacerme sentir única en el día más importante de mi vida. La dedicación, paciencia y finura con la que confeccionaron mi vestido de novia superó todo lo que soñé.',
-    image: 'https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&w=300&q=80',
+    image: '/images/IMAGES2/boda-novia-encaje-2.jpg',
     date: 'Diciembre, 2025'
   },
   {
@@ -1124,7 +1124,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Martina Szwarc',
     role: 'Bat Mitzvá',
     quote: 'El vestido de mi Bat Mitzvá fue elogiado por todos. Es elegante, juvenil y comodísimo para bailar toda la noche. La atención personalizada de las modistas fue maravillosa.',
-    image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=300&q=80',
+    image: '/images/IMAGES2/bat-mitzvah-rosa-1.jpg',
     date: 'Octubre, 2025'
   },
   {
@@ -1132,7 +1132,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Elena Rodríguez',
     role: 'Madrina de Boda',
     quote: 'Con 84 años de experiencia, sabían exactamente qué caída y color me favorecía. La seda salvaje y los detalles dorados que elegimos en el local hicieron que me sintiera espléndida.',
-    image: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=300&q=80',
+    image: '/images/coleccion-real/madrina-marfil-sirena-1.jpg',
     date: 'Marzo, 2026'
   }
 ];
