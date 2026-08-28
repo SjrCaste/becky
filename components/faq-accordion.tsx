@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/accordion"
 import Link from "next/link"
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 
 const faqs = [
   {

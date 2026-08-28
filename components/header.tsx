@@ -14,7 +14,7 @@ const navLinks = [
   { href: "/preguntas-frecuentes", label: "FAQ" },
 ]
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -53,7 +53,7 @@ export function Header() {
             </span>
             <span className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-accent" />
-              Lun–Vie 10–19 · Sáb 10–14
+              Lun–Jue 10–19 · Vie 10–15:30
             </span>
           </div>
           <span className="text-[10px] tracking-[0.3em] uppercase text-accent font-semibold hidden sm:inline">

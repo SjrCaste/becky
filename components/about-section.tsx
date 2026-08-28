@@ -8,8 +8,8 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
   return (
     <section id="historia" className="py-24 md:py-32 bg-card relative overflow-hidden">
       {/* Decorative background details */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-rose-300/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Editorial Heading */}
@@ -72,8 +72,8 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
               <div className="flex gap-3">
                 <Users2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-serif text-base text-foreground font-semibold">Atención Íntima</h4>
-                  <p className="text-xs text-muted-foreground mt-1">Salones privados para pruebas exclusivas con cita previa.</p>
+                  <h4 className="font-serif text-base text-foreground font-semibold">Alta Costura Personalizada</h4>
+                  <p className="text-xs text-muted-foreground mt-1">Asesoramiento íntimo y a medida en salones privados, con cita previa, para que cada pieza refleje tu estilo.</p>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -115,9 +115,9 @@ export function AboutSection({ timelineEvents }: { timelineEvents: TimelineEvent
                     src={item.image}
                     alt={item.title}
                     fill
-                    className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-accent/10 opacity-30 group-hover:opacity-0 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/25 via-transparent to-transparent opacity-70 group-hover:opacity-30 transition-opacity duration-500" />
                 </div>
 
                 {/* Text Content */}

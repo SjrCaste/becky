@@ -3,7 +3,7 @@
 import { MapPin, Clock, Phone, Instagram } from "lucide-react"
 import Link from "next/link"
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 
 export function ContactSection() {
   return (
@@ -67,8 +67,9 @@ export function ContactSection() {
               <div>
                 <h3 className="font-serif text-lg text-primary-foreground mb-2">Horarios de Asesoría</h3>
                 <p className="text-primary-foreground/75 font-light text-sm">
-                  Lunes a Viernes: 10:00 - 19:00 hs<br />
-                  Sábados: 10:00 - 14:00 hs
+                  Lunes a Jueves: 10:00 - 19:00 hs<br />
+                  Viernes: 10:00 - 15:30 hs<br />
+                  Sábados y Domingos: Cerrado
                 </p>
               </div>
             </div>

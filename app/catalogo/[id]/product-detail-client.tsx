@@ -11,6 +11,18 @@ interface Props {
   recommendations: Product[];
 }
 
+const STOCK_LABELS: Record<string, string> = {
+  disponible: "Disponible",
+  reservado: "Reservado",
+  vendido: "Sin Stock",
+}
+
+const STOCK_COLORS: Record<string, string> = {
+  disponible: "bg-emerald-600",
+  reservado: "bg-amber-500",
+  vendido: "bg-red-600",
+}
+
 export default function ProductDetailClient({ product, recommendations }: Props) {
   const [activeImageIndex, setActiveImageIndex] = useState(0)
   const [zoomStyle, setZoomStyle] = useState({ display: 'none', backgroundPosition: '0% 0%' })
@@ -32,7 +44,7 @@ export default function ProductDetailClient({ product, recommendations }: Props)
 
   // Pre-fill WhatsApp message
   const waText = `Hola Sedería Becky! Estoy interesada/o en recibir asesoramiento sobre el diseño "${product.name}" (ID: ${product.id}).`
-  const waUrl = `https://wa.me/5491100000000?text=${encodeURIComponent(waText)}`
+  const waUrl = `https://wa.me/5491166317921?text=${encodeURIComponent(waText)}`
 
   return (
     <div className="pt-28 md:pt-36 pb-24 bg-background">
@@ -121,9 +133,15 @@ export default function ProductDetailClient({ product, recommendations }: Props)
                 {product.name}
               </h1>
               
-              <span className="text-xs text-muted-foreground uppercase tracking-widest border border-border px-3 py-1 bg-muted/30">
-                {product.subCategory}
-              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xs text-muted-foreground uppercase tracking-widest border border-border px-3 py-1 bg-muted/30">
+                  {product.subCategory}
+                </span>
+                <span className={`inline-flex items-center gap-1.5 text-[10px] tracking-widest text-white font-semibold px-3 py-1 uppercase ${STOCK_COLORS[product.status || "disponible"]}`}>
+                  <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
+                  {STOCK_LABELS[product.status || "disponible"]}
+                </span>
+              </div>
             </div>
 
             <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">

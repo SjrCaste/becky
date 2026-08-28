@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Instagram, Phone, MapPin, Clock, MessageCircle } from "lucide-react"
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 
 const links = {
   navegacion: [
@@ -115,9 +115,11 @@ export function Footer() {
               <li className="flex gap-3 items-start text-xs text-primary-foreground/75 font-light">
                 <Clock className="w-4 h-4 flex-shrink-0 text-accent" />
                 <span>
-                  Lunes a Viernes: 10:00 – 19:00 hs
+                  Lunes a Jueves: 10:00 – 19:00 hs
                   <br />
-                  Sábados: 10:00 – 14:00 hs
+                  Viernes: 10:00 – 15:30 hs
+                  <br />
+                  Sábados y Domingos: Cerrado
                 </span>
               </li>
             </ul>

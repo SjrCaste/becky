@@ -1,6 +1,6 @@
 import { MapPin, Clock, Phone, Instagram } from "lucide-react"
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 
 const info = [
   {
@@ -11,7 +11,7 @@ const info = [
   {
     icon: Clock,
     title: "Horarios de Atención",
-    lines: ["Lunes a Viernes: 10:00 – 19:00 hs", "Sábados: 10:00 – 14:00 hs", "Domingos y Feriados: Cerrado"],
+    lines: ["Lunes a Jueves: 10:00 – 19:00 hs", "Viernes: 10:00 – 15:30 hs", "Sábados, Domingos y Feriados: Cerrado"],
   },
   {
     icon: Phone,

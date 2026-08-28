@@ -36,7 +36,7 @@ export function BookingForm() {
                           `*Contacto:* ${formData.whatsapp}\n` +
                           `*Comentario:* ${formData.message || "Sin comentarios adicionales"}`
       
-      const waUrl = `https://wa.me/5491100000000?text=${encodeURIComponent(messageText)}`
+      const waUrl = `https://wa.me/5491166317921?text=${encodeURIComponent(messageText)}`
       
       // Auto redirect to WhatsApp after 3 seconds
       setTimeout(() => {
@@ -107,7 +107,7 @@ export function BookingForm() {
                   Hemos pre-registrado tu cita boutique. Te estamos redirigiendo automáticamente a WhatsApp para coordinar el horario definitivo y confirmar la disponibilidad de nuestra agenda.
                 </p>
                 <a
-                  href={`https://wa.me/5491100000000`}
+                  href={`https://wa.me/5491166317921`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-foreground text-xs tracking-widest uppercase font-semibold hover:bg-accent/90 transition-all duration-300"
@@ -195,7 +195,7 @@ export function BookingForm() {
                           onSelect={setDate}
                           initialFocus
                           locale={es}
-                          disabled={(date) => date < new Date() || date.getDay() === 0} // Disable past and Sundays
+                          disabled={(date) => date < new Date() || date.getDay() === 0 || date.getDay() === 6} // Disable past, Saturdays and Sundays
                         />
                       </PopoverContent>
                     </Popover>

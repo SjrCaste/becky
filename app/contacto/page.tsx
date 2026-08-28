@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Contacto & Showroom | Sedería Becky",
   description:
-    "Visitanos en Azcuénaga 410, CABA. Lunes a Viernes 10–19 hs, Sábados 10–14 hs. Agendá tu cita exclusiva de alta costura.",
+    "Visitanos en Azcuénaga 410, CABA. Lunes a Jueves 10–19 hs, Viernes 10–15:30 hs. Agendá tu cita exclusiva de alta costura.",
 }
 
 export default function ContactoPage() {

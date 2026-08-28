@@ -19,6 +19,18 @@ const CATEGORY_LABELS: Record<string, string> = {
   "padrinos-y-madrinas": "Padrinos y Madrinas"
 }
 
+const STOCK_LABELS: Record<string, string> = {
+  disponible: "Disponible",
+  reservado: "Reservado",
+  vendido: "Sin Stock",
+}
+
+const STOCK_COLORS: Record<string, string> = {
+  disponible: "bg-emerald-600",
+  reservado: "bg-amber-500",
+  vendido: "bg-red-600",
+}
+
 // Client-side catalog component that reads SearchParams
 function CatalogContent() {
   const searchParams = useSearchParams()
@@ -82,8 +94,20 @@ function CatalogContent() {
   }
 
   return (
-    <div className="pt-28 md:pt-36 pb-24 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="pt-28 md:pt-36 pb-24 bg-background relative overflow-hidden">
+      {/* Decorative background accents */}
+      <div className="absolute top-0 right-0 w-[32rem] h-[32rem] bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[28rem] h-[28rem] bg-rose-300/10 rounded-full blur-3xl pointer-events-none" />
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: `url("/images/IMAGES2/detalle-encaje-novia.jpg")`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Banner editorial */}
         <div className="border-b border-border/80 pb-10 mb-12">
@@ -288,6 +312,14 @@ function CatalogContent() {
                         )}
                         <span className="text-[8px] tracking-widest text-primary-foreground font-medium bg-black/40 px-2 py-0.5 uppercase border border-white/10 backdrop-blur-sm">
                           {p.subCategory}
+                        </span>
+                      </div>
+
+                      {/* Stock status badge */}
+                      <div className="absolute top-4 right-4 z-10 pointer-events-none">
+                        <span className={`flex items-center gap-1.5 text-[8px] tracking-widest text-white font-semibold px-2 py-1 uppercase shadow-sm ${STOCK_COLORS[p.status || "disponible"]}`}>
+                          <span className="w-1.5 h-1.5 rounded-full bg-white/90" />
+                          {STOCK_LABELS[p.status || "disponible"]}
                         </span>
                       </div>
                     </div>

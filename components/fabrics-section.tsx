@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { FABRICS } from "@/lib/data"
-import { SearchCode, HelpCircle, Scissors } from "lucide-react"
+import { SearchCode, HelpCircle, Scissors, Instagram } from "lucide-react"
 
 export function FabricsSection() {
   const [activeFabric, setActiveFabric] = useState<string | null>(null)
@@ -114,15 +114,26 @@ export function FabricsSection() {
           <p className="text-sm text-muted-foreground font-light mb-6">
             ¿Buscás una tela específica o asesoramiento para confección a medida?
           </p>
-          <a
-            href="https://wa.me/5491100000000?text=Hola%20Seder%C3%ADa%20Becky%2C%20quisiera%20consultar%20por%20disponibilidad%20de%20telas"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-foreground text-foreground hover:bg-foreground hover:text-primary-foreground text-xs tracking-[0.2em] uppercase transition-all duration-500"
-          >
-            <Scissors className="w-4 h-4" />
-            Consultar con Sastre / Diseñadora
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://wa.me/5491166317921?text=Hola%20Seder%C3%ADa%20Becky%2C%20quisiera%20consultar%20por%20disponibilidad%20de%20telas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-foreground text-foreground hover:bg-foreground hover:text-primary-foreground text-xs tracking-[0.2em] uppercase transition-all duration-500"
+            >
+              <Scissors className="w-4 h-4" />
+              Consultar con Sastre / Diseñadora
+            </a>
+            <a
+              href="https://instagram.com/sederiabecky"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-accent/40 text-accent hover:bg-accent/10 text-xs tracking-[0.2em] uppercase transition-all duration-500"
+            >
+              <Instagram className="w-4 h-4" />
+              Seguir en Instagram
+            </a>
+          </div>
         </div>
       </div>
     </section>

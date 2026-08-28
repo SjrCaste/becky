@@ -43,6 +43,7 @@ export const createProduct = async (productData: Partial<Product>): Promise<Prod
     features: productData.features || [],
     tags: productData.tags || [],
     isFeatured: productData.isFeatured || false,
+    status: productData.status || "disponible",
   }
 
   const { data, error } = await supabase

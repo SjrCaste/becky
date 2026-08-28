@@ -100,6 +100,7 @@ export function ProductForm({ initialData }: ProductFormProps) {
       isFeatured: data.isFeatured,
       sizes: data.sizes ? data.sizes.split(",").map(s => s.trim()) : [],
       colors: data.colors ? data.colors.split(",").map(c => c.trim()) : [],
+      status: data.status as any,
     }
 
     if (initialData?.id) {

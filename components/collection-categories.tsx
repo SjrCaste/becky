@@ -15,7 +15,7 @@ const categories = [
   {
     slug: "15-anos",
     title: "Vestidos de 15 Años",
-    tagline: "Debutante Elegance",
+    tagline: "Elegancia de Debutante",
     image: "/images/coleccion-real/esmeralda-dorado-1.jpg",
     subcategories: ["Asesoramiento Personalizado", "Confección a Medida", "Modelos Exclusivos"],
     description: "Modelos exclusivos para una noche inolvidable, con asesoramiento personalizado y confección a medida."
@@ -23,7 +23,7 @@ const categories = [
   {
     slug: "fiesta",
     title: "Vestidos de Fiesta",
-    tagline: "Gala & Eventos",
+    tagline: "Galas y Eventos",
     image: "/images/coleccion-real/rosa-encaje-capas-1.jpg",
     subcategories: ["Graduaciones", "Eventos Sociales", "Galas"],
     description: "Opciones elegantes y modernas para graduaciones, eventos sociales, galas y celebraciones especiales."

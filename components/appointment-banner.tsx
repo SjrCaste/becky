@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { CalendarDays } from "lucide-react"
 
-const WA_NUMBER = "5491100000000"
+const WA_NUMBER = "5491166317921"
 const WA_MESSAGE =
   "Hola%2C%20quisiera%20agendar%20una%20cita%20para%20asesorarme%20sobre%20vestidos."
 

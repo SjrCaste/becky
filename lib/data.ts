@@ -12,6 +12,7 @@ export interface Product {
   features: string[];
   tags: string[];
   isFeatured?: boolean;
+  status?: 'disponible' | 'reservado' | 'vendido';
 }
 
 export interface Fabric {
@@ -1091,15 +1092,9 @@ export const TIMELINE: TimelineEvent[] = [
     image: '/images/IMAGES2/boda-novia-iglesia-1.jpg'
   },
   {
-    year: '1963',
-    title: 'Eduardo Abad se incorpora a la familia',
-    description: 'Eduardo Abad, familiar de nuestro fundador, se suma al negocio familiar, dando continuidad a la tradición de la sedería de bodas y fiestas.',
-    image: '/images/IMAGES2/detalle-costuras-novia.jpg'
-  },
-  {
     year: '1983',
-    title: 'Eduardo Abad al frente del local',
-    description: 'Eduardo Abad asume la atención del local, donde continúa hasta el día de hoy: ya son 43 años atendiendo a cada cliente con dedicación familiar.',
+    title: 'Continuidad familiar',
+    description: 'La segunda generación de la familia Abad toma la posta del local, dando continuidad a más de cuatro décadas de dedicación y atención personalizada.',
     image: '/images/IMAGES2/novia-interior-elegante.jpg'
   },
   {

@@ -49,8 +49,10 @@ export function HeroSection({ homeSetting }: { homeSetting?: HomeSetting | null 
       />
 
       {/* Luxury Radial/Linear Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-foreground" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/40 to-foreground" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(0,0,0,0.4)_80%)]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-accent/25 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-rose-900/15 via-transparent to-amber-900/15" />
 
       {/* Golden Floating Particles (Luxury Sparkles) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-10">
@@ -112,7 +114,7 @@ export function HeroSection({ homeSetting }: { homeSetting?: HomeSetting | null 
             Reservar cita
           </a>
           <a
-            href="https://wa.me/5491100000000?text=Hola%20Seder%C3%ADa%20Becky%2C%20quisiera%20consultar%20por%20un%20vestido"
+            href="https://wa.me/5491166317921?text=Hola%20Seder%C3%ADa%20Becky%2C%20quisiera%20consultar%20por%20un%20vestido"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-8 py-4 bg-transparent border border-accent/40 text-accent text-xs tracking-[0.2em] uppercase hover:bg-accent/10 transition-all duration-500 flex items-center justify-center gap-2"
